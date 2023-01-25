@@ -2,7 +2,7 @@
 session_start();
 if (empty($_SESSION["Id_usuario"])) {
     header("location: ../login/login.php");
-}else if (!empty($_SESSION["Rol"] != 3)) {
+}else if (!empty($_SESSION["Rol"] != 2)) {
 
     session_start();
     session_destroy();
@@ -26,8 +26,8 @@ include '../config/conexion.php';
 <body>
 
     <?php 
-        include "menuParticipante.php";
-        include "controladoresCervezas/ctrlparticipar.php";
+        include "menuJuez.php";
+        include "controladoresJuzgamiento/ctrlparticipar.php";
             $sql=$conexion->query("SELECT * FROM evento ORDER BY Id_evento DESC LIMIT 0,1");
             $datos=$sql->fetch_object();
             if ($datos!=null) {

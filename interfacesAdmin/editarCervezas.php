@@ -8,13 +8,25 @@ if (empty($_SESSION["Id_usuario"])) {
     session_destroy();
     header("location: ../login/login.php");
 }
-?>
-
-<?php
 include "../config/conexion.php";
 if(!$conexion){
-  die("<br/>Sin conexi&oacute;n.");
-};
+    die("<br/>Sin conexi&oacute;n.");
+    };
+
+$sql=$conexion->query("SELECT * FROM evento ORDER BY Id_evento DESC LIMIT 0,1");
+$alt=$sql->fetch_object();
+if ($alt!=null) {
+    $name=$alt->Nombre;
+    if ($name!=null) {
+        $evento=$alt->Id_evento;
+    }else {
+        $sql=$conexion->query("SELECT * FROM evento ORDER BY Id_evento DESC LIMIT 1,1");
+        $alt=$sql->fetch_object();
+        $evento=$alt->Id_evento;
+    }
+
+
+
 
 /*obtenemos los datos del primer select para categorias*/
 $sql = "SELECT * FROM categorias";
@@ -27,7 +39,10 @@ mysqli_close($conexion);
 include "../config/conexion.php";
 
 /* obtenemos los datos de usuario */
-$sql_2 = "SELECT * FROM usuarios";
+$sql_2 = "SELECT Id_usuario,usuarios.Nombre FROM usuarios
+INNER JOIN evento_usuarios ON evento_usuarios.fk_usuarios=usuarios.Id_usuario
+INNER JOIN evento ON evento.Id_evento=evento_usuarios.fk_evento
+WHERE usuarios.Rol!=1 && usuarios.Rol!=2 && evento.Id_evento=$evento";
 $query_2 = mysqli_query($conexion, $sql_2);
 $filas_2 = mysqli_fetch_all($query_2, MYSQLI_ASSOC); 
 mysqli_close($conexion);
@@ -65,27 +80,27 @@ mysqli_close($conexion);
 
         //Ejecutar accion al cambiar de opcion en el select de las bandas
         $('#categorias').change(function(){
-          var Id_categoria = $(this).val(); //obtener el id seleccionado
+        var Id_categoria = $(this).val(); //obtener el id seleccionado
 
-          if(Id_categoria !== ''){ //verificar haber seleccionado una opcion valida
+        if(Id_categoria !== ''){ //verificar haber seleccionado una opcion valida
 
             /*Inicio de llamada ajax*/
             $.ajax({
-              data: {Id_categoria:Id_categoria}, //variables o parametros a enviar, formato => nombre_de_variable:contenido
-              dataType: 'html', //tipo de datos que esperamos de regreso
-              type: 'POST', //mandar variables como post o get
-              url: './controladoresCervezas/getEstilos.php' //url que recibe las variables
+            data: {Id_categoria:Id_categoria}, //variables o parametros a enviar, formato => nombre_de_variable:contenido
+            dataType: 'html', //tipo de datos que esperamos de regreso
+            type: 'POST', //mandar variables como post o get
+            url: './controladoresCervezas/getEstilos.php' //url que recibe las variables
             }).done(function(data){ //metodo que se ejecuta cuando ajax ha completado su ejecucion             
 
-              estilos.html(data); //establecemos el contenido html de discos con la informacion que regresa ajax             
-              estilos.prop('disabled', false); //habilitar el select
+            estilos.html(data); //establecemos el contenido html de discos con la informacion que regresa ajax             
+            estilos.prop('disabled', false); //habilitar el select
             });
             /*fin de llamada ajax*/
 
-          }else{ //en caso de seleccionar una opcion no valida
+        }else{ //en caso de seleccionar una opcion no valida
             estilos.val(''); //seleccionar la opcion "- Seleccione -", osea como reiniciar la opcion del select
             estilos.prop('disabled', true); //deshabilitar el select
-          }    
+        }    
         });
         
 
@@ -108,11 +123,7 @@ mysqli_close($conexion);
 </head>
 
     <?php 
-        include("menuAdmin.php");
-        
-        $sql=$conexion->query("SELECT * FROM evento ORDER BY Id_evento DESC LIMIT 0,1");
-        $alt=$sql->fetch_object();
-        if ($alt!=null) {
+        include("menuAdmin.php");            
         include "../config/conexion.php";
     ?>
 
@@ -207,7 +218,7 @@ mysqli_close($conexion);
                         INNER JOIN categorias ON categorias.Id_categoria=estilos.fk_categoria AND estilos.Id_estilo = cerveza.fk_estilo
                         INNER JOIN evento_usuarios ON usuarios.Id_usuario=evento_usuarios.fk_usuarios
                         INNER JOIN evento ON evento_usuarios.fk_evento=evento.Id_evento
-                        WHERE evento_usuarios.fk_evento=$i+1");
+                        WHERE evento_usuarios.fk_evento=$evento");
                         /* se crea un while para listar los datos y se repite la la cantidad de filas de la tabla*/
                         while($datos=$sql->fetch_object()){ 
                         ?>
@@ -369,14 +380,7 @@ mysqli_close($conexion);
                 ?>
 
             <?php
-                    }else {
-                        echo "<div style='color: white;
-                        margin-top: 20%;
-                        padding: 0 0 20px 0;
-                        text-align: center;
-                        color: #fff;
-                        font-size: 50px;'>Debes registrar al menos un evento</div>";
-                    }
+                    
                 ?>
 
     </div>
@@ -385,3 +389,16 @@ mysqli_close($conexion);
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>
+
+<?php    
+}else {
+    echo "<div style='color: white;
+                        margin-top: 20%;
+                        padding: 0 0 20px 0;
+                        text-align: center;
+                        color: #fff;
+                        font-size: 50px;'>Debes registrar al menos un evento</div>";
+}
+
+?>
+

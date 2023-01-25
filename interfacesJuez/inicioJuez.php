@@ -1,4 +1,4 @@
-<?php
+    <?php
 session_start();
 if (empty($_SESSION["Id_usuario"])) {
     header("location: ../login/login.php");
@@ -108,8 +108,12 @@ if (empty($_SESSION["Id_usuario"])) {
                                 </form>
                             </div>
                         
-                        <?php include "./podio/fork.php";?>
-                    
+                            <?php include "./podio/fork.php";?>
+                                <div >
+                                    
+                                <a href="ultimoevento.php"><button>Ver ultimo evento disponible</button></a>
+                                
+                            </div>
                     
                     <?php
                 

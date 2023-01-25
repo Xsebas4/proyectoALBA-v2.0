@@ -57,13 +57,6 @@
                 </div>
             </a>
 
-            <a href="ultimoevento.php">
-                <div class="option">
-                <i class="bi bi-calendar-event" title="Ultimo evento"></i>
-                <h4>Último evento</h4>
-                </div>
-            </a>
-
             <a href="inscripcionCerveza.php">
                 <div class="option">
                 <i class="bi bi-clipboard2-plus" title="Inscripcion de cervezas"></i>
@@ -82,6 +75,13 @@
                 <div class="option">
                 <i class="bi bi-clipboard2-check" title="Resultados"></i> 
                 <h4>Resultados</h4>
+                </div>
+            </a>
+            
+            <a href="ultimoevento.php">
+                <div class="option">
+                <i class="bi bi-calendar-event" title="Ultimo evento"></i>
+                <h4>Último evento</h4>
                 </div>
             </a>
 

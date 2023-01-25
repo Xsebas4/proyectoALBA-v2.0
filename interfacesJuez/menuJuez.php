@@ -72,6 +72,13 @@
                 </div>
             </a>
 
+            <a href="ultimoevento.php">
+                <div class="option">
+                <i class="bi bi-calendar-event" title="Ultimo evento"></i>
+                <h4>Último evento</h4>
+                </div>
+            </a>
+
             <a href="../login/controladorSalir.php" onclick="return salir()">
                 <div class="option">
                 <i class="bi bi-box-arrow-left" title="Salir"></i>

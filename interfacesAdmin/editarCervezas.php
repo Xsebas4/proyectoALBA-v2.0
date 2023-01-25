@@ -113,6 +113,7 @@ mysqli_close($conexion);
         $sql=$conexion->query("SELECT * FROM evento ORDER BY Id_evento DESC LIMIT 0,1");
         $alt=$sql->fetch_object();
         if ($alt!=null) {
+            
         include "../config/conexion.php";
     ?>
 
@@ -207,7 +208,7 @@ mysqli_close($conexion);
                         INNER JOIN categorias ON categorias.Id_categoria=estilos.fk_categoria AND estilos.Id_estilo = cerveza.fk_estilo
                         INNER JOIN evento_usuarios ON usuarios.Id_usuario=evento_usuarios.fk_usuarios
                         INNER JOIN evento ON evento_usuarios.fk_evento=evento.Id_evento
-                        WHERE evento_usuarios.fk_evento=$i+1");
+                        WHERE evento_usuarios.fk_evento=$evento");
                         /* se crea un while para listar los datos y se repite la la cantidad de filas de la tabla*/
                         while($datos=$sql->fetch_object()){ 
                         ?>

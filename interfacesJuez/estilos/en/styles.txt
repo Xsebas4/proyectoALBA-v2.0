@@ -853,7 +853,7 @@ lagered, central-europe, traditional-style, pale-lager-family,
 malty
 </div>
 
-<div id="hashtag">
+<div id="hashtag14">
 Helles Bock 
 Overall Impression: A relatively pale, strong, malty German 
 lager with a nicely attenuated finish that enhances drinkability. 
@@ -1619,8 +1619,11 @@ Barock-Dunkel
 
 Tags: standard-strength, dark-color, bottom-fermented, 
 lagered, central-europe, traditional-style, malty, dark-lager-
-family 
-8B. Schwarzbier 
+family
+</div>
+
+<div id="hashtag28">
+Schwarzbier 
 Overall Impression: A dark German lager that balances 
 roasted yet smooth malt flavors with moderate hop bitterness. 
 The lighter body, dryness, and lack of a harsh, burnt, or heavy 
@@ -1685,11 +1688,10 @@ Schwarzbier
 Tags: standard-strength, dark-color, bottom-fermented, 
 lagered, central-europe, traditional-style, balanced, dark-lager-
 family 
+</div>
 
-9. STRONG EUROPEAN BEER 
-This category contains more strongly flavored and higher alcohol lagers from Germany and the Baltic region. Most are dark, but 
-some pale versions are known. 
-9A. Doppelbock 
+<div id="hashtag29">
+Doppelbock 
 Overall Impression: A strong, rich, and very malty German 
 lager that can have both pale and dark variants. The darker 
 versions have more richly-developed, deeper malt flavors, 
@@ -1778,7 +1780,10 @@ Zwergator
 Tags: high-strength, amber-color, pale-color, bottom-
 fermented, lagered, central-europe, traditional-style, bock-
 family, malty 
-9B. Eisbock 
+</div>
+
+<div id="hashtag30">
+Eisbock 
 Overall Impression: A strong, full-bodied, rich, and malty 
 dark German lager often with a viscous quality and strong 
 flavors. Even though flavors are concentrated, the alcohol 
@@ -1838,8 +1843,11 @@ ABV: 9.0 – 14.0%
 Commercial Examples: Kulmbacher Eisbock 
 
 Tags: very-high-strength, amber-color, bottom-fermented, 
-lagered, central-europe, traditional-style, bock-family, malty 
-9C. Baltic Porter 
+lagered, central-europe, traditional-style, bock-family, malty
+</div>
+
+<div id="hashtag31">
+Baltic Porter 
 Overall Impression: A strong, dark, malty beer with 
 different interpretations within the Baltic region. Smooth, 
 warming, and richly malty, with complex dark fruit flavors and 
@@ -1917,9 +1925,9 @@ Sinebrychoff Porter, Zywiec Porter
 Tags: high-strength, dark-color, any-fermentation, lagered, 
 eastern-europe, traditional-style, porter-family, malty 
 
+</div>
 
-10. GERMAN WHEAT BEER 
-This category contains vollbier- and starkbier-strength German wheat beers without sourness, in light and dark colors. 
+<div id="hashtag32">
 10A. Weissbier 
 Overall Impression: A pale, refreshing, lightly-hopped 
 German wheat beer with high carbonation, dry finish, fluffy 
@@ -1991,7 +1999,10 @@ Weihenstephaner Hefeweißbier
 
 Tags: standard-strength, pale-color, top-fermented, central-
 europe, traditional-style, wheat-beer-family, malty 
-10B. Dunkles Weissbier 
+</div>
+
+<div id="hashtag33">
+Dunkles Weissbier 
 Overall Impression: A moderately dark German wheat beer 
 with a distinctive banana-and-clove weizen yeast fermentation 
 profile, supported by a toasted bread or caramel malt flavor. 
@@ -2062,7 +2073,10 @@ Weihenstephaner Hefeweißbier Dunkel
 
 Tags: standard-strength, amber-color, top-fermented, central-
 europe, traditional-style, wheat-beer-family, malty 
-10C. Weizenbock 
+</div>
+
+<div id="hashtag34">
+Weizenbock 
 Overall Impression: A strong and malty German wheat beer 
 combining the best wheat and yeast flavors of a Weissbier with 
 the rich maltiness, strength, and body of a Bock. The style 
@@ -2152,19 +2166,10 @@ Weihenstephaner Vitus
 
 Tags: high-strength, amber-color, pale-color, top-fermented, 
 central-europe, traditional-style, wheat-beer-family, malty 
+</div>
 
-11. BRITISH BITTER 
-The family of British bitters grew out of English pale ales as a draught product after the late 1800s. The use of crystal malts in bitters 
-became more widespread after WWI. Traditionally served very fresh under no pressure (gravity or hand pump only) at cellar 
-temperatures (i.e., “real ale”). Most bottled or kegged versions of UK-produced bitters are often higher-alcohol and more highly 
-carbonated versions of cask products produced for export, and have a different character and balance than their draught 
-counterparts in Britain (often being sweeter and less hoppy than the cask versions). These guidelines reflect the “real ale” version of 
-the style, not the export formulations of commercial products. 
-Several regional variations of bitter exist, ranging from darker, sweeter versions served with nearly no head to brighter, hoppier, 
-paler versions with large foam stands, and everything in between. 
-Judges should not over-emphasize the caramel component of these styles. Exported bitters can be oxidized, which increases caramel-
-like flavors (as well as more negative flavors). Do not assume that oxidation-derived flavors are traditional or required for the style. 
-11A. Ordinary Bitter 
+<div id="hashtag35">
+Ordinary Bitter 
 Overall Impression: Low gravity, alcohol, and carbonation 
 make this an easy-drinking session beer. The malt profile can 
 vary in flavor and intensity, but should never override the 
@@ -2223,8 +2228,11 @@ Brakspear Gravity, Fuller's Chiswick Bitter, Greene King IPA,
 Tetley’s Original Bitter 
 
 Tags: session-strength, amber-color, top-fermented, british-
-isles, traditional-style, amber-ale-family, bitter 
-11B. Best Bitter 
+isles, traditional-style, amber-ale-family, bitter
+</div>
+
+<div id="hashtag36">
+Best Bitter 
 Overall Impression: A flavorful, yet refreshing, session beer. 
 Some examples can be more malt balanced, but this should not 
 override the overall bitter impression. Drinkability is a critical 
@@ -2283,8 +2291,10 @@ Origin, Surrey Hills Shere Drop, Timothy Taylor Landlord
 
 Tags: standard-strength, amber-color, top-fermented, british-
 isles, traditional-style, amber-ale-family, bitter 
+</div>
 
-11C. Strong Bitter 
+<div id="hashtag37">
+Strong Bitter 
 Overall Impression: An average-strength to moderately-
 strong British bitter ale. The balance may vary between fairly 
 even between malt and hops to somewhat bitter. Drinkability is 
@@ -2364,9 +2374,9 @@ Shepherd Neame Bishop's Finger, Summit Extra Pale Ale
 
 Tags: standard-strength, amber-color, top-fermented, british-
 isles, traditional-style, amber-ale-family, bitter 
+</div>
 
-12. PALE COMMONWEALTH BEER 
-This category contains pale, moderately-strong, hop-forward, bitter ales from countries within the former British Empire. 
+<div id="hashtag38">
 12A. British Golden Ale 
 Overall Impression: A hop-forward, average-strength to 
 moderately-strong pale bitter. Drinkability and a refreshing 
@@ -2435,8 +2445,11 @@ Brewers Gold, Golden Hill Exmoor Gold, Hop Back Summer
 Lightning, Oakham JHB, Spitfire Golden Ale 
 
 Tags: standard-strength, pale-color, top-fermented, british-
-isles, craft-style, pale-ale-family, bitter, hoppy 
-12B. Australian Sparkling Ale 
+isles, craft-style, pale-ale-family, bitter, hoppy
+</div>
+
+<div id="hashtag39">
+Australian Sparkling Ale 
 Overall Impression: A well-balanced, pale, highly-
 carbonated, and refreshing ale suitable for drinking in a hot 
 climate. Fairly bitter, with a moderate herbal-spicy hop and 
@@ -2527,7 +2540,10 @@ Commercial Examples: Coopers Sparkling Ale
 
 Tags: standard-strength, pale-color, top-fermented, pacific, 
 traditional-style, pale-ale-family, bitter 
-12C. English IPA 
+</div>
+
+<div id="hashtag40">
+English IPA 
 Overall Impression: A bitter, moderately-strong, very well-
 attenuated pale British ale with a dry finish and a hoppy aroma 
 and flavor. Classic British ingredients provide the most 
@@ -2623,14 +2639,10 @@ IPA, Thornbridge Jaipur, Worthington White Shield
 Tags: high-strength, pale-color, top-fermented, british-isles, 
 traditional-style, ipa-family, bitter, hoppy 
 
-13. BROWN BRITISH BEER 
-While Dark Mild, Brown Ale, and English Porter may have long and storied histories, these guidelines describe the modern versions. 
-They are grouped together for judging purposes only since they often have similar flavors and balance, not because of any implied 
-common ancestry. The similar characteristics are low to moderate strength, dark color, generally malty balance, and British 
-ancestry. These styles have no historic relationship to each other; especially, none of these styles evolved into any of the others, or was 
-ever a component of another. The category name was never used historically to describe this grouping of beers; it is our name for the 
-judging category. “Brown Beer” was a distinct and important historical product, and is not related to this category name. 
-13A. Dark Mild 
+</div>
+
+<div id="hashtag41">
+Dark Mild 
 Overall Impression: A dark, low-gravity, malt-focused 
 British session ale readily suited to drinking in quantity. 
 Refreshing, yet flavorful for its strength, with a wide range of 
@@ -2703,8 +2715,11 @@ Hobson’s Champion Mild, Mighty Oak Oscar Wilde,
 Moorhouse Black Cat, Theakston Traditional Mild 
 
 Tags: session-strength, dark-color, top-fermented, british-
-isles, traditional-style, brown-ale-family, malty 
-13B. British Brown Ale 
+isles, traditional-style, brown-ale-family, malty
+</div>
+
+<div id="hashtag42"> 
+British Brown Ale 
 Overall Impression: A malty, caramelly, brown British ale 
 without the roasted flavors of a Porter. Balanced and flavorful, 
 but usually a little stronger than most average UK beers. 
@@ -2770,7 +2785,10 @@ Maduro Brown Ale, Maxim Double Maxim, Newcastle Brown
 Ale, Riggwelter Yorkshire Ale, Samuel Smith’s Nut Brown Ale 
 
 Tags: standard-strength, amber-color, top-fermented, british-
-isles, traditional-style, brown-ale-family, malty 
+isles, traditional-style, brown-ale-family, 
+</div>
+
+<div id="hashtag43"> 
 13C. English Porter 
 Simply called “Porter” in Britain, the name “English Porter” is 
 used to differentiate it from other derivative porters described 
@@ -2856,33 +2874,9 @@ Porter
 Tags: standard-strength, dark-color, top-fermented, british-
 isles, traditional-style, porter-family, malty, roasty 
 
-14. SCOTTISH ALE 
-There are really only three traditional beer styles broadly available today in Scotland: the 70/- Scottish Heavy, the 80/- Scottish 
-Export, and the Strong Scotch Ale (Wee Heavy, Style 17C). The 60/- Scottish Light is rare and often cask-only, but it does seem to be 
-having a bit of a renaissance currently. All these styles took modern form after World War II, regardless of prior use of the same 
-names. Currently, the 60/- is similar to a dark mild, the 70/- is similar to an ordinary bitter, and the 80/- similar to a best or strong 
-bitter. The Scottish beers have a different balance and flavor profile, but fill a similar market position as those English beers. 
-The Light, Heavy, and Export beers have similar flavor profiles, and are often produced through the parti-gyling process. As gravity 
-increases, so does the character of the beer. Traditional ingredients were dextrinous pale ale malt, corn, dark brewing sugars, and 
-brewers caramel for coloring. Modern (post-WWII) recipes often add small amounts of dark malt and lower percentages of crystal 
-malt, along with other ingredients like amber malt and wheat. Scottish brewers traditionally used single infusion mashes, often with 
-underlet mashes and multiple sparges. 
-In general, these Scottish beers are weaker, sweeter, darker, lower in attenuation, and less highly hopped compared to equivalent 
-modern English beers. They are produced using slightly cooler fermentation temperatures than their counterparts. Many of these 
-differences have been exaggerated in popular lore; they are noticeable, but not huge, yet enough to affect the balance of the beer, and 
-to perhaps indicate a national flavor preference. The balance remains malty and somewhat sweet due to higher finishing gravity, 
-lower alcohol, and lower hopping rates. Many of these divergences from English beer took place between the late 1800s and the mid-
-1900s. 
-Production methods championed by homebrewers, such as kettle caramelization or grists heavy in a variety of crystal malts, are not 
-commonly used in traditional products but can approximate those flavors when traditional ingredients aren’t available. The use of 
-peat-smoked malt is not only completely inauthentic, it produces a dirty, phenolic flavor inappropriate in any of these styles. Smoked 
-versions (using any type smoke) should be entered in 32A Classic Style Smoked Beer. 
-The use of ‘shilling’ (/-) designations is a Scottish curiosity. Originally it referred to the price of beer in hogshead casks, which in no 
-way could be constant over time. Shillings aren’t even used a currency now in Scotland. But the name stuck as a shorthand for a type 
-of beer, even if the original meaning stopped being the real price during WWI. About all it means now is that larger numbers mean 
-stronger beers, at least within the same brewery. Between the world wars, some breweries used the price per pint rather than 
-shillings (e.g., Maclay 6d for 60/-, 7d for 70/-, 8d for 80/-). Confusingly, during this time 90/- pale ale was a low-gravity bottled 
-beer. Curious, indeed. 
+</div>
+
+<div id="hashtag44">
 14A. Scottish Light 
 Overall Impression: A low-alcohol, malty beer with light 
 caramel, toast, toffee, and fruit flavors. A slight roast dryness 
@@ -2937,8 +2931,11 @@ ABV: 2.5 – 3.3%
 Commercial Examples: Belhaven Best, McEwan's 60/- 
 
 Tags: session-strength, amber-color, top-fermented, british-
-isles, traditional-style, amber-ale-family, malty 
-14B. Scottish Heavy 
+isles, traditional-style, amber-ale-family, malty
+</div>
+
+<div id="hashtag45">
+Scottish Heavy 
 Overall Impression: A lower-alcohol, malty beer with light 
 caramel, toast, toffee, and fruity flavors. A slight roast dryness 
 offsets the residual sweetness in the finish, with the bitterness 
@@ -2993,8 +2990,11 @@ ABV: 3.3 – 3.9%
 Commercial Examples: McEwan's 70/-, Orkney Raven Ale 
 
 Tags: session-strength, amber-color, top-fermented, british-
-isles, traditional-style, amber-ale-family, malty 
-14C. Scottish Export 
+isles, traditional-style, amber-ale-family, malty
+</div>
+
+<div id="hashtag46">
+Scottish Export 
 Overall Impression: A moderate-strength, malty beer with 
 light caramel, toast, toffee, and fruit flavors. A slight roast 
 dryness offsets the residual sweetness in the finish, with the 
@@ -3053,11 +3053,10 @@ Wee Jock 80 Shilling, Caledonian Edinburgh Castle, McEwan’s
 Tags: standard-strength, amber-color, top-fermented, british-
 isles, traditional-style, amber-ale-family, malty 
 
-15. IRISH BEER 
-The traditional beers of Ireland contained in this category are amber to dark, top-fermented beers of moderate to slightly strong 
-strength, and are often widely misunderstood due to differences in export versions, or overly focusing on the specific attributes of beer 
-produced by high-volume, well-known breweries. Each of the styles in this grouping has a wider range than is commonly believed. 
-15A. Irish Red Ale 
+</div>
+
+<div id="hashtag47">
+Irish Red Ale 
 Overall Impression: An easy-drinking pint, often with 
 subtle flavors. Slightly malty in the balance sometimes with an 
 initial soft toffee or caramel sweetness, a slightly grainy-
@@ -3126,7 +3125,10 @@ Ale, Porterhouse Nitro Red Ale, Smithwick’s Irish Ale
 
 Tags: standard-strength, amber-color, top-fermented, british-
 isles, traditional-style, amber-ale-family, balanced 
-15B. Irish Stout 
+Irish </div>
+
+<div id="hashtag48">
+Stout 
 Overall Impression: A black beer with a pronounced 
 roasted flavor, often similar to coffee. The balance can range 
 from fairly even to quite bitter, with the more balanced 
@@ -3204,7 +3206,11 @@ Irish Stout, Porterhouse Irish Stout
 Tags: standard-strength, dark-color, top-fermented, british-
 isles, traditional-style, stout-family, bitter, roasty 
 
-15C. Irish Extra Stout 
+</div>
+
+<div id="hashtag49">
+
+Irish Extra Stout 
 Overall Impression: A fuller-bodied black beer with a 
 pronounced roasted flavor, often similar to coffee and dark 
 chocolate with some malty complexity. The balance can range 
@@ -3268,10 +3274,10 @@ Leann Folláin, Porterhouse XXXX, Sheaf Stout
 Tags: high-strength, dark-color, top-fermented, british-isles, 
 traditional-style, stout-family, bitter, roasty 
 
-16. DARK BRITISH BEER 
-This category contains average to strong, bitter to sweet, modern British and Irish stouts that originated in England even if some are 
-now more widely associated with Ireland. In this case, “British” means the broader British Isles not Great Britain. 
-16A. Sweet Stout 
+</div>
+
+<div id="hashtag50">
+Sweet Stout 
 Overall Impression: A very dark, sweet, full-bodied, slightly 
 roasty stout that can suggest coffee-and-cream, or sweetened 
 espresso. 
@@ -3330,7 +3336,10 @@ Jet Stout
 
 Tags: standard-strength, dark-color, top-fermented, british-
 isles, traditional-style, stout-family, malty, roasty, sweet 
-16B. Oatmeal Stout 
+</div>
+
+<div id="hashtag51">
+Oatmeal Stout 
 Overall Impression: A dark, roasty, full-bodied stout with 
 enough sweetness to support the oat backbone. The sweetness, 
 balance, and oatmeal impression can vary considerably. 
@@ -3402,7 +3411,10 @@ Young's London Stout
 
 Tags: standard-strength, dark-color, top-fermented, british-
 isles, traditional-style, stout-family, balanced, roasty
-16C. Tropical Stout 
+</div>
+
+<div id="hashtag52">
+Tropical Stout 
 Overall Impression: A very dark, sweet, fruity, moderately 
 strong stout with smooth, roasty flavors, yet no burnt 
 harshness. 
@@ -3463,7 +3475,10 @@ Extra Stout
 
 Tags: high-strength, dark-color, top-fermented, british-isles, 
 traditional-style, stout-family, malty, roasty, sweet 
-16D. Foreign Extra Stout 
+</div>
+
+<div id="hashtag53">
+Foreign Extra Stout 
 Overall Impression: A very dark, rich, moderately strong, 
 fairly dry stout with prominent roast flavors. 
 

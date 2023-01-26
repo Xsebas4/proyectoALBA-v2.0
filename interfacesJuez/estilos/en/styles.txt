@@ -190,7 +190,7 @@ america, traditional-style, pale-ale-family, balanced
 </div>
 
 <div id="hashtag4">
-1D. American Wheat Beer 
+American Wheat Beer 
 Overall Impression: A pale, refreshing grainy, doughy, or 
 bready wheat beer with a clean fermentation profile and a 
 variable hop character and bitterness. Its lighter body and 
@@ -430,7 +430,7 @@ lagered, traditional-style, dark-lager-family, malty
 </div>
 
 <div id="hashtag8">
-3A. Czech Pale Lager 
+Czech Pale Lager 
 Overall Impression: A lighter-bodied, rich, refreshing, 
 hoppy, bitter pale Czech lager having the familiar flavors of the 
 stronger Czech Premium Pale Lager (Pilsner-type) beer but in a 
@@ -1051,7 +1051,7 @@ central-europe, traditional-style, pale-ale-family, balanced
 </div>
 
 <div id="hashtag17">
-5C. German Helles Exportbier 
+German Helles Exportbier 
 Overall Impression: A golden German lager balancing a 
 smooth malty profile with a bitter, hoppy character in a slightly 
 above-average body and strength beer. 
@@ -1187,10 +1187,7 @@ hoppy
 </div>
 
 <div id="hashtag19">
-6. AMBER MALTY EUROPEAN LAGER 
-This category groups amber-colored, German-origin, bottom-fermented lagerbiers that have a malty balance and are vollbier to 
-starkbier in strength. 
-6A. Märzen 
+Märzen 
 Overall Impression: An amber, malty German lager with a 
 clean, rich, toasty, bready malt flavor, restrained bitterness, 
 and a well-attenuated finish. The overall malt impression is 
@@ -1928,7 +1925,7 @@ eastern-europe, traditional-style, porter-family, malty
 </div>
 
 <div id="hashtag32">
-10A. Weissbier 
+Weissbier 
 Overall Impression: A pale, refreshing, lightly-hopped 
 German wheat beer with high carbonation, dry finish, fluffy 
 
@@ -2377,7 +2374,7 @@ isles, traditional-style, amber-ale-family, bitter
 </div>
 
 <div id="hashtag38">
-12A. British Golden Ale 
+British Golden Ale 
 Overall Impression: A hop-forward, average-strength to 
 moderately-strong pale bitter. Drinkability and a refreshing 
 quality are critical components of the style, as it was initially a 
@@ -2789,7 +2786,7 @@ isles, traditional-style, brown-ale-family,
 </div>
 
 <div id="hashtag43"> 
-13C. English Porter 
+English Porter 
 Simply called “Porter” in Britain, the name “English Porter” is 
 used to differentiate it from other derivative porters described 
 in these guidelines. 
@@ -2877,7 +2874,7 @@ isles, traditional-style, porter-family, malty, roasty
 </div>
 
 <div id="hashtag44">
-14A. Scottish Light 
+Scottish Light 
 Overall Impression: A low-alcohol, malty beer with light 
 caramel, toast, toffee, and fruit flavors. A slight roast dryness 
 offsets the residual sweetness in the finish, with the bitterness 
@@ -3544,10 +3541,10 @@ Ridgeway Foreign Export Stout
 Tags: high-strength, dark-color, top-fermented, british-isles, 
 traditional-style, stout-family, balanced, roasty 
 
-17. STRONG BRITISH ALE 
-This category contains stronger, non-roasty ales of the British Isles. Covers the style space above bitters, milds, and brown ales while 
-excluding porters and stouts.
-17A. British Strong Ale 
+</div>
+
+<div id="hashtag54">
+Strong British Ale 
 Overall Impression: An ale of respectable alcoholic 
 strength, traditionally bottled-conditioned and cellared. Can 
 have a wide range of interpretations, but most will have varying 
@@ -3622,7 +3619,10 @@ Smith’s Winter Welcome, Shepherd Neame 1698
 
 Tags: high-strength, amber-color, top-fermented, british-isles, 
 traditional-style, strong-ale-family, malty 
-17B. Old Ale 
+</div>
+
+<div id="hashtag56">
+Old Ale 
 Overall Impression: A stronger-than-average English ale, 
 though usually not as strong or rich as an English Barley Wine, 
 but usually malty. Warming. Shows positive maturation effects 
@@ -3699,7 +3699,10 @@ Theakston Old Peculier
 
 Tags: high-strength, amber-color, top-fermented, british-isles, 
 traditional-style, strong-ale-family, malty, aged 
-17C. Wee Heavy 
+</div>
+
+<div id="hashtag57">
+Wee Heavy 
 See Category 14 Scottish Ale introduction for general 
 characteristics of Scottish beer. 
 Overall Impression: Rich, sweet malt depth with caramel, 
@@ -3762,7 +3765,10 @@ House Ale, The Duck-Rabbit Wee Heavy Scotch-Style Ale
 
 Tags: high-strength, amber-color, top-fermented, british-isles, 
 traditional-style, strong-ale-family, malty 
-17D. English Barley Wine 
+</div>
+
+<div id="hashtag58">
+English Barley Wine 
 Overall Impression: A strong and richly malty ale with a 
 pleasant fruity or hoppy depth. A wintertime sipper with a full, 
 chewy body and warming alcohol. 
@@ -3846,9 +3852,10 @@ Tom
 
 Tags: very-high-strength, amber-color, top-fermented, british-
 isles, traditional-style, strong-ale-family, malty 
-18. PALE AMERICAN ALE 
-This category contains modern American ales of average strength and light color that are moderately malty to moderately bitter. 
-18A. Blonde Ale 
+</div>
+
+<div id="hashtag59">
+Blonde Ale 
 Overall Impression: Easy-drinking, approachable, malt-
 oriented American craft beer, often with interesting fruit, hop, 
 or character malt notes. Well-balanced and clean, is a 
@@ -3909,7 +3916,10 @@ Summer Blonde Brew
 
 Tags: standard-strength, pale-color, any-fermentation, north-
 america, craft-style, pale-ale-family, balanced 
-18B. American Pale Ale 
+</div>
+
+<div id="hashtag60">
+Pale American Ale 
 Overall Impression: An average-strength, hop-forward, pale 
 American craft beer with sufficient supporting malt to make 
 the beer balanced and drinkable. The clean hop presence can 
@@ -3989,10 +3999,10 @@ Ale 2.0
 Tags: standard-strength, pale-color, top-fermented, north-
 america, craft-style, pale-ale-family, bitter, hoppy 
 
-19. AMBER AND BROWN AMERICAN BEER 
-This category contains modern American amber and brown top-fermented ales and warm-fermented lagers of standard strength 
-that can be balanced to bitter. 
-19A. American Amber Ale 
+</div>
+
+<div id="hashtag61">
+American Amber Ale 
 Overall Impression: An amber, hoppy, moderate-strength 
 American craft beer with a malty caramel flavor. The balance 
 can vary quite a bit, with some versions being fairly malty and 
@@ -4058,7 +4068,10 @@ Saint Arnold Amber Ale, Tröegs Hopback Amber Ale
 
 Tags: standard-strength, amber-color, top-fermented, north-
 america, craft-style, amber-ale-family, balanced, hoppy 
-19B. California Common 
+</div>
+
+<div id="hashtag62">
+California Common 
 Overall Impression: A toasty and caramelly, fairly bitter, 
 standard-strength beer with an interesting fruitiness and 
 rustic, woody hop character. Smooth and well carbonated. 
@@ -4119,7 +4132,10 @@ Engine Lager
 Tags: standard-strength, amber-color, bottom-fermented, 
 north-america, traditional-style, amber-lager-family, bitter, 
 hoppy 
-19C. American Brown Ale 
+</div>
+
+<div id="hashtag63">
+American Brown Ale 
 Overall Impression: A malty but hoppy standard-strength 
 American ale frequently with chocolate and caramel flavors. 
 The hop flavor and aroma complement and enhance the malt 
@@ -4189,14 +4205,10 @@ Brown
 
 Tags: standard-strength, dark-color, top-fermented, north-
 america, craft-style, brown-ale-family, balanced, hoppy 
+</div>
 
-
-20. AMERICAN PORTER AND STOUT 
-These beers all evolved from their English namesakes to be wholly transformed by American craft brewers. Generally, these styles 
-are bigger, stronger, more roast-forward, and more hop-centric than their traditional Anglo cousins. These styles are grouped 
-together due to a similar shared 
-History and flavor profile. 
-20A. American Porter 
+<div id="hashtag64">
+American Porter 
 Overall Impression: A malty, bitter, and often somewhat 
 hoppy dark beer with a balanced, roasted, and frequently 
 chocolatey character. 
@@ -4263,7 +4275,10 @@ Porter, Sierra Nevada Porter, Smuttynose Robust Porter
 
 Tags: standard-strength, dark-color, top-fermented, north-
 america, craft-style, porter-family, bitter, roasty, hoppy 
-20B. American Stout 
+</div>
+
+<div id="hashtag65">
+American Stout 
 Overall Impression: A fairly strong, highly roasted, bitter, 
 hoppy dark stout. The body and dark flavors typical of stouts 
 with a more aggressive American hop character and bitterness. 
@@ -4326,10 +4341,10 @@ Stout, Trillium Secret Stairs
 
 Tags: high-strength, dark-color, top-fermented, north-
 america, craft-style, stout-family, bitter, roasty, hoppy 
+</div>
 
-
-
-20C. Imperial Stout 
+<div id="hashtag66">
+Imperial Stout 
 Traditionally an English style, but it is currently much more 
 popular and widely available in America and internationally, 
 where it is a craft beer favorite, not a historical curiosity. 
@@ -4421,14 +4436,10 @@ Saint Petersburg
 Tags: very-high-strength, dark-color, top-fermented, british-
 isles, north-america, traditional-style, craft-style, stout-family, 
 malty, bitter, roasty 
+</div>
 
-21. IPA 
-The IPA category is for modern American IPAs and their derivatives. This does not imply that English IPAs aren’t proper IPAs or that 
-there isn’t a relationship between them. This is simply a method of grouping similar styles for competition purposes. English IPAs are 
-grouped with other English-derived beers, and the stronger Double IPA is grouped with stronger American beers. The term “IPA” is 
-intentionally not spelled out as “India Pale Ale” since none of these beers historically went to India, and many aren’t pale. However, 
-the term IPA has come to be a balance-defined style in modern craft beer. 
-21A. American IPA 
+<div id="hashtag67">
+American IPA 
 Overall Impression: A decidedly hoppy and bitter, 
 moderately strong, pale American ale. The balance is hop-
 forward, with a clean fermentation profile, dryish finish, and 
@@ -4502,7 +4513,10 @@ Jack, Maine Lunch, Russian River Blind Pig IPA
 
 Tags: high-strength, pale-color, top-fermented, north-
 america, craft-style, ipa-family, bitter, hoppy 
-21B. Specialty IPA 
+</div>
+
+<div id="hashtag68">
+Specialty IPA 
 Specialty IPA is a competition entry category, not a distinct 
 style. Beers entered here are not experimental beers; they are 
 a collection of currently-produced types of beer that may or 
@@ -4589,7 +4603,10 @@ ABV: 3.0 – 5.0%
 Standard – 
 ABV: 5.0 – 7.5% 
 Double – 
-ABV: 7.5 – 10.0% 
+ABV: 7.5 – 10.0%
+</div>
+
+<div id="hashtag69">
 Specialty IPA: Belgian IPA 
 Overall Impression: A dry, hoppy IPA with fruitiness and 
 spiciness of Belgian yeast. Often lighter in color and more 
@@ -4648,7 +4665,10 @@ Commercial Examples: Brewery Vivant Triomphe, Green
 Flash Le Freak, Houblon Chouffe, Urthel Hop It 
 
 Tags: high-strength, pale-color, top-fermented, north-
-america, craft-style, ipa-family, specialty-family, bitter, hoppy 
+america, craft-style, ipa-family, specialty-family, bitter, hoppy
+</div>
+
+<div id="hashtag73">
 Specialty IPA: Black IPA 
 Overall Impression: A beer with the dryness, hop-forward 
 balance, and flavor characteristics of an American IPA, but 
@@ -4709,7 +4729,10 @@ Duck-Rabbit Hoppy Bunny ABA, Stone Sublimely Self-
 Righteous Black IPA 
 
 Tags: high-strength, dark-color, top-fermented, north-
-america, craft-style, ipa-family, specialty-family, bitter, hoppy 
+america, craft-style, ipa-family, specialty-family, bitter, hoppy
+</div>
+
+<div id="hashtag72">
 Specialty IPA: Brown IPA 
 Overall Impression: Hoppy, bitter, and moderately strong 
 like an American IPA, but with dark caramel, chocolate, toffee, 
@@ -4770,7 +4793,10 @@ Commercial Examples: Dogfish Head Indian Brown Ale,
 Harpoon Brown IPA, Russian River Janet’s Brown Ale 
 
 Tags: high-strength, dark-color, top-fermented, north-
-america, craft-style, ipa-family, specialty-family, bitter, hoppy 
+america, craft-style, ipa-family, specialty-family, bitter, hoppy
+</div>
+
+<div id="hashtag75"> 
 Specialty IPA: Red IPA 
 Overall Impression: Hoppy, bitter, and moderately strong 
 like an American IPA, but with some caramel, toffee, or fruit 
@@ -4834,7 +4860,9 @@ Nugget Nectar
 
 Tags: high-strength, amber-color, top-fermented, north-
 america, craft-style, ipa-family, specialty-family, bitter, hoppy 
+</div>
 
+<div id="hashtag71">
 Specialty IPA: Rye IPA 
 Overall Impression: An American IPA with spicy, grainy rye 
 malt. The rye gives a bready and peppery flavor, a creamier 
@@ -4887,7 +4915,10 @@ Commercial Examples: Founders Red’s Rye IPA, Sierra
 Nevada Ruthless Rye 
 
 Tags: high-strength, amber-color, top-fermented, north-
-america, craft-style, ipa-family, specialty-family, bitter, hoppy 
+america, craft-style, ipa-family, specialty-family, bitter, hoppy
+</div>
+
+<div id="hashtag70">
 Specialty IPA: White IPA 
 Overall Impression: A fruity, spicy, refreshing version of an 
 American IPA, but with a lighter color, less body, and featuring 
@@ -4938,7 +4969,10 @@ Ale, New Belgium Accumulation
 
 Tags: high-strength, pale-color, top-fermented, north-
 america, craft-style, ipa-family, specialty-family, bitter, hoppy, 
-spice 
+spice
+</div>
+
+<div id="hashtag155">
 Specialty IPA: Brut IPA 
 Overall Impression: A very pale, hop-forward American IPA 
 variant with a bone-dry finish, very high carbonation, and a 
@@ -5014,7 +5048,10 @@ IPA
 
 Tags: high-strength, pale-color, top-fermented, north-
 america, craft-style, ipa-family, specialty-family, bitter, hoppy 
-21C. Hazy IPA 
+</div>
+
+<div id="hashtag156">
+Hazy IPA 
 Overall Impression: An American IPA with intense fruit 
 flavors and aromas, a soft body, smooth 
 Mouthfeel , and often 
@@ -5103,11 +5140,10 @@ Trillium Congress Street, WeldWerks Juicy Bits
 
 Tags: high-strength, pale-color, top-fermented, north-
 america, craft-style, ipa-family, bitter, hoppy 
+</div>
 
-22. STRONG AMERICAN ALE 
-This category includes modern American strong ales with a varying balance of malt and hops. The category is defined mostly by 
-higher alcohol strength and a lack of roast. 
-22A. Double IPA 
+<div id="hashtag76">
+Double IPA 
 Overall Impression: An intensely hoppy, fairly strong, bitter 
 pale ale without the big, rich, complex maltiness, residual 
 sweetness, and body of an American Barleywine. Strongly 
@@ -5169,7 +5205,10 @@ Freak of Nature
 
 Tags: very-high-strength, pale-color, top-fermented, north-
 america, craft-style, ipa-family, bitter, hoppy 
-22B. American Strong Ale 
+</div>
+
+<div id="hashtag77">
+American Strong Ale 
 A grouping of beers with similar balance and profile rather 
 than a distinct style. A category for a variety of stronger, 
 bitter-and-malty beers that aren’t quite Barleywines. 
@@ -5240,10 +5279,10 @@ Brewing Shark Attack Double Red Ale
 
 Tags: high-strength, amber-color, top-fermented, north-
 america, craft-style, strong-ale-family, bitter, hoppy 
+</div>
 
-
--------------------------------------------------------------------------------------------------------------
-22C. American Barleywine 
+<div id="hashtag">
+American Barleywine 
 Overall Impression: A very strong, malty, hoppy, bitter 
 American ale with a rich palate, full 
 Mouthfeel , and warming 
@@ -5320,7 +5359,346 @@ Coast Old Ale, East End Gratitude, Hair of the Dog Doggie
 Claws, Sierra Nevada Bigfoot 
 
 Tags: very-high-strength, amber-color, top-fermented, north-
-america, craft-style, strong-ale-family, bitter, hoppy 
+america, craft-style, strong-ale-family, bitter, hoppy
+</div>
+
+<div id="hashtag24">
+Historical Beer: Kellerbier 
+The original Kellerbier is a Märzen-type lager from the 
+Franconia region of Germany, but other traditional versions 
+are based on Munich Helles and Dunkel lagers. Variations 
+based on Pils are a more modern invention with a wider 
+international following and higher production. 
+Overall Impression: An unfiltered, unpasteurized, fully-
+attenuated German lager traditionally served from lagering 
+vessels. May be a little richer, more robust, and rustic than the 
+base styles. A fresh beer without fermentation defects 
+associated with young, green (unfinished) beer. 
+
+Aroma:  Reflects base style. May have an added bready, yeasty 
+character from the yeast. Clean. Pale versions can have a more 
+robust hop character. Dark versions can have a richer malt 
+profile. 
+Appearance: Reflects base style. Can be somewhat hazy or 
+cloudy, but never murky. Likely a little darker in appearance 
+than the base style. 
+
+Flavor:  Reflects base style. May have an added bready, yeasty 
+character from the yeast. Pale versions can have a more robust 
+hop character. Dark versions can have a richer malt profile, but 
+should never be roasty. May be slightly more bitter than the 
+base style, and be a little heavier in the finish. Fully fermented 
+with a clean fermentation profile; should not have eggy, 
+buttery, apple-like, or similar flaws. 
+
+Mouthfeel : Reflects base style. May have a bit more body and 
+a creamier texture than the base style. Carbonation typical of 
+the base style, but may be lower. 
+Comments: A traditional serving style more than a beer style, 
+yet these beers do have sensory differences from the base 
+beers. Judge these somewhat like Specialty-Type Beers; 
+consider the range of kellerbiers based on Helles to Märzen to 
+Dunkel to be a continuous spectrum, so allow the brewer to 
+pick the closest one without being too picky about strict 
+adherence to the base style. 
+The name literally means cellar beer, and is a natural, gentle 
+handling of fresh-tasting German lagerbier for seasonal, on-
+premise service. Like British Bitters, best enjoyed locally as the 
+bottled examples may lack the characteristic freshness. 
+
+History: Originally referred to lager beer matured in the caves 
+or cellars under the brewery, and then served from them. First 
+applied to amber lager from Franconia, then later to local 
+Munich styles. More recently used internationally to create 
+specialty Pils variants. By tradition, a serving style for a 
+popular summer specialty in Bavaria, but now adapted broadly 
+as a marketing term for unfiltered lagers. 
+
+Characteristic Ingredients: Same as base styles. 
+Traditionally naturally carbonated. Dry-hopping is not a 
+traditional German brewing method, but some modern pale 
+examples use this technique – which is allowable in this style 
+as long as it is balanced. Traditionally lagered and unfiltered, 
+these beers were never meant to be packaged for external sale. 
+Style Comparison: Richer or more robust than the base 
+style, possibly with a bit more body and 
+Mouthfeel . Can be 
+slightly cloudier than base beer. 
+Entry Instructions: The entrant must specify the base style: 
+German Pils, Munich Helles, Märzen, or Munich Dunkel. 
+
+Vital Statistics: Same as base style. 
+
+Commercial Examples: Märzen – Faust Kräusen 
+Naturtrüb, Mahrs Bräu aU Ungespundet Kellerbier; Dunkel – 
+Engel Kellerbier Dunkel, Paulaner Ur-Dunkel Naturtrüb; 
+Helles – ABK Kellerbier Naturtrüb, Löwenbräu 1747 Original; 
+Pils – Giesinger Feines Pilschen, Ketterer Zwickel-Pils 
+
+
+Tags: standard-strength, bottom-fermented, central-europe, 
+traditional-style, balanced
+</div>
+
+<div id="hashtag25">
+Kellerbier: Pale Kellerbier
+Overall impression:
+A young and fresh Helles, but still malty, exhibiting complete attenuation from the Pils malt. Hop character (aroma, flavor, and bitterness) is more pronounced and the beer is cloudy, often with some level of diacetyl, and possibly some green apple and/or other yeast-derived notes. As with the traditional Helles, the Keller version is still a beer meant to be drunk by the liter and should generally remain a light, refreshing and easy-drinking golden lager.
+
+Aroma:
+Moderately-low to moderately-high spicy, floral, or herbal hop aroma. Very low to moderate diacetyl, possibly very low notes of green apple and other yeast derivatives. Pleasant grainy sweetness, clean malt aroma, with a possible low DMS base note.
+
+Appearance:
+Slight haze to moderate cloudiness, but never extremely cloudy or hazy. Medium yellow to pale golden colour. Creamy white foam with good persistence. When served from the barrel, it can have low carbonation and very low foam.
+
+Flavour:
+Moderately malty with a rounded, grainy-sweet profile. Low to moderately-high spicy, floral, or herbal hop flavor with moderate bitterness that can linger. The finish is crisp and dry, but the aftertaste is still malty. Very low to moderate diacetyl, which should always remain at a pleasant, drinkable level, balancing out the other characteristics of the beer a bit; an oppressive diacetyl is not appropriate. Possibly very low green apple or other yeast-derived characteristics, and possibly very low DMS in the background.
+
+Mouthfeel:
+medium body Low to medium carbonation. Depending on the level of the yeast in suspension, it can help create a slightly creamy texture. A slight heaviness on the tongue may be present due to diacetyl.
+
+Comments:
+The paler Kellerbiers are young, unfiltered and unpasteurized versions of a Munich Helles beer, although a repurposed Pils or Golden Lager designed specifically for serving young could be used. The best examples are served only on tap at many of the breweries in the Munich area. Bottled versions are not likely to have the freshness, hop character, and young beer notes that draft versions do.
+
+History:
+Modern adaptation of the traditional Franconian style, using Helles instead of Märzen. Today a popular summer seasonal beer.
+
+Ingredients:
+Pilsner malt, German hops, German lager yeast, same as a Munich Helles.
+
+Comparison:
+Usually a young, unfiltered, raw version of a Munich Helles, although it can be a young, unfiltered, raw version of other German Golden Lagers, such as a Pilsner or seasonal Golden Lager made specifically to serve young .
+
+Commercial Examples:
+(local) Paulaner, Paulaner Brauhaus, Hofbrau, Tegernseer Tal. (bottled) Ayinger Kellerbier, Hacker-Pschorr Munchner Kellerbier Anno 1417, Hofbrau Munchner Sommer Naturtrub, Wolnzacher Hell Naturtrüb.
+
+examples:
+standard-strength, pale-color, bottom-fermented, central-european, traditional-style, balanced, pale-lager-family
+
+Vital Statistics:
+ABV: 4.7% - 5.4%
+FG: 1,008 - 1,011
+IBU: 20 - 45
+OG: 1,045 - 1,051
+SRM: 3.0 - 7.0
+</div>
+
+<div id="hashtag26">
+Kellerbier: Amber Kellerbier
+Overall impression
+A young, unfiltered, unpasteurized beer that is somewhere between the color of a Helles and a Märzen, spicier from the hops and more attenuated. Interpretations vary in color and balance, but stick around the drinkable 4.8% ABV. The balance ranges from dry, spicy, pale-colored interpretations of Buttenheim's St. Georgen and Löwenbräu, to darker, maltier interpretations of Fränkische Schweiz. This style is first and foremost a method of producing simple, drinkable beers for neighbors to local ingredients to consume fresh. A balance with a focus on drinkability is important.
+
+Aroma
+Moderate German malt strength, typically rich, with bready notes, somewhat toasty, light bread crust. Hop aroma moderately-low to moderately spicy and peppery. Very low to low diacetyl, occasionally low to moderately-low sulfur, and very low notes of green apple or other yeast derivatives. Caramel, biscuit, or toasty malt aromas are inappropriate.
+
+Appearance
+Moderately cloudy to clear depending on age, but never very cloudy or hazy. Deep golden to reddish amber color. Whitish, creamy foam. When served on tap, it can have low carbonation and very low foam.
+
+Flavour
+Initial malt flavors may suggest sweetness, but the finish is moderately dry to dry and slightly bitter. The distinctive and complex maltiness often includes a toasty appearance. Hop bitterness is moderate to moderately-high. Spicy or herbal hop flavor is low to moderately-high. The balance may be on either the malt or hop side, but the finish is not sweet. Obvious caramel or roasted malt flavors are inappropriate. Very low to low diacetyl. Possible very low notes of green apple or other yeast derivatives. Mild, malty aftertaste.
+
+Mouthfeel
+Medium body, with a creamy texture and medium carbonation. Fully fermented, without a sweet or cloying impression.
+
+Comments
+The best examples of Kellerbier Amber are served only on tap at many of the small breweries in the Franconian area (this is a beer best served fresh, with the serving style being an important part of the style). Bottled versions are not likely to have the freshness, hop character, and young beer notes that draft versions do.
+
+History
+This was the classic historical style before it was adapted in other areas. This original and older style of Kellerbier would have simply been a beer served in local taverns that did not have enough time to produce a sparkling lager. Many breweries in Franconia used some of these young beers during the summer months, for festivals like July's Annafest (est. 1840) in Forchheim, where it was traditional to drink straight from lagering ponds.
+
+Ingredients
+The grist recipe varies, although traditional German versions emphasized pale, colored Franconian malt. The notion of elegance is derived from high-quality local ingredients, particularly the malts. Spalt or other local spice hops are most common. Franconian brewers rarely brew by decoction due to the cost of energy.
+
+Comparison
+Typically, this style is a younger, unfiltered, unpasteurized, and more hoppy version of a Munich Helles or Märzen. The Fränkische Schweiz versions will be close to brown or dark brown.
+
+Commercial Examples
+(local) Greif, Eichhorn, Nederkeller, Hebendanz (bottled) Buttenheimer Kaiserdom Kellerbier, Kulmbacher Monchshof Kellerbier, Leikeim Kellerbier, Löwenbräu Kellerbier, Mahr's Kellerbier, St. Georgen Kellerbier, Tucher Kellerbier Naturtrub.
+
+examples
+standard-strength, amber-color, bottom-fermented, central-european, traditional-style, balanced, amber-lager-family
+
+Vital Statistics
+ABV: 4.8% - 5.4%
+FG: 1,012 - 1,016
+IBU: 25 - 40
+OG: 1,048 - 1,054
+SRM: 7.0 - 17.0
+</div>
+
+<div id="hashtag115">
+Trappist Single
+Overall impression
+A pale, bitter, highly attenuated and well carbonated Trappist ale displaying a fruity-spicy Trappist yeast character, a spicy-floral hop profile, and a smooth and supportive grainy-sweet malt palate.
+
+Aroma
+Medium-low to medium-high Trappist yeast character, displaying a fruity-spicy character, along with a medium-low to medium spicy or floral hop character, sometimes enhanced by light additions of herbal and citrus spices. Low to medium-low to grainy-sweet malt background, which may have a light honey or sugar quality. Fruit expression can vary widely (citrus, seed fruits, stone fruits). Slightly spicy, with a phenolic tendency from yeast found in the best examples. Characteristics to chewing gum are inadequate.
+
+Appearance
+Pale yellow to medium golden color. Generally with good clarity, with a moderately sized, persistent, undulating white head with a characteristic lace.
+
+Flavour
+Fruity, hoppy, bitter and dry. Malty-sweet impression, with a soft grainy-sweet palate and a dry, hoppy finish. The malt may have a slight impression of honey biscuits or crackers. Moderately spicy or floral hop flavor. Esters can be citrus (orange, lemon, grapefruit), seed fruit (apple, pear) or stone fruit (peach, apricot). Light to moderate spicy, peppery or clove phenols. Bitterness rises to a crisp, dry finish with a light malt aftertaste, moderate hops, and yeast character.
+
+Mouthfeel
+Medium-light to medium body. Smooth. Medium-high to high carbonation, can be somewhat sharp. It should not have a noticeable alcohol warmth.
+
+Comments
+Often not labeled or available outside of the monastery, or brewed infrequently. It could also be called monk's beer or brother's beer. Very attenuated, usually 85% or more.
+
+History
+While Trappist breweries have a tradition of brewing a lower strength beer as the monk's daily ration, the pale, sour ale that describes this style is a relatively modern invention that reflects current tastes. Westvleteren first made theirs in 1999, but replaced the older, lower-density products.
+
+Ingredients
+Pilsner malt, Belgian Trappist yeast, Saaz type hops.
+
+Comparison
+Like a top-fermented Belgian/Trappist interpretation of a pale, hoppy, well-attenuated German Pilsner, but displaying the quintessential Belgian yeast character. It has less sweetness, more attenuation, less malt character, and is more hop-focused than a Pale Belgian Ale. More like a thinned out and more highly hopped Tripel than a thinned down Belgian Ale Blonde.
+
+Commercial Examples
+Achel 5° Blond, St. Bernardus Extra 4, Westmalle Extra, Westvleteren Blond.
+
+examples
+standard-strength, pale-color, top-fermented, western-european, artisan-style, bitter, hoppy
+
+Vital Statistics
+ABV: 4.8% - 6.0%
+FG: 1,004 - 1,010
+IBU: 25 - 45
+OG: 1,044 - 1,054
+</div>
+
+<div id="hashtag160">
+Belgian Dubbel
+Overall impression
+A somewhat spicy, dry and strong Trappist ale with a pleasant rounded malt flavor and firm bitterness. Very aromatic, with spicy, fruity and light alcohol notes that combine with the clean sustaining character of the malt to produce a surprisingly drinkable beverage considering the high alcohol level.
+
+Aroma
+Complex bouquet with moderate to significant spiciness, moderate fruity esters, and low alcohol and hop aromas. Generously spicy, peppery and sometimes with phenols like cloves. The esters are reminiscent of citrus fruits such as oranges, but can sometimes have a mild banana character. A low but distinctive floral, spicy and sometimes perfumed hop character is usually found. The alcohols are soft, spicy and low intensity. The malt character is light, with a soft and slightly grainy-sweet or honey-like impression. The best examples have a seamless, harmonious interplay between yeast character, hops, malt, and alcohol.
+
+Appearance
+Deep yellow to deep golden color. good clarity. Effervescent. Long lasting, creamy, rocky white foam, resulting in a characteristic Belgian lace on the glass as it fades.
+
+Flavour
+A marriage of spicy, fruity and alcohol flavors supported by a smooth, rounded grainy-sweet malt impression, occasionally with a very light honey note. Low to moderate peppery phenols in character. Esters are reminiscent of citrus fruits like orange or sometimes lemon, low to moderate. A low to moderate spicy hop character is usually found. The alcohols are soft, spicy and low intensity. Bittering is typically medium to high with a combination of hop bitterness and yeast-produced phenolics. Substantial carbonation and bitterness tend to a dry finish with a moderately bitter aftertaste and substantial spicy-fruity yeast character. The grainy-sweet malt flavor does not imply any residual sweetness.
+
+Mouthfeel
+Medium-light to medium body, although lighter than the substantial density might suggest. Highly carbonated. The alcohol content is misleading and has little to no obvious warm sensation. Always effervescent.
+
+Comments
+High in alcohol, without strong alcohol flavors. The best examples are elusive, not obvious. The high carbonation and attenuation help bring out the many flavors and increase the perception of a dry finish. Most Trappist versions have at least 30 IBUs and are very dry. Traditionally bottle conditioned (or bottle refermented).
+
+History
+Originally popularized by the Westmalle Trappist Monastery.
+
+Ingredients
+Pilsner malt, typically with pale sugar adjuncts. Saaz or Styrian Goldings type hops are commonly used. Belgian yeast strains are used, producing fruity esters, spicy phenols, and higher alcohols, often aided by the slightly warmer fermentation temperatures. Spice additions, generally if used, are not traditional, just as a background character. Pretty soft water.
+
+Comparison
+It may resemble a Belgian Golden Strong Ale, but it's a bit darker and a bit fuller-bodied, with more emphasis on phenolics and less on esters. It generally has a more rounded malt flavor, but it should never be sweet.
+
+Commercial Examples
+Affligem Tripel, Chimay Cinq Cents, La Rulles Tripel, La Trappe Tripel, St. Bernardus Tripel, Unibroue La Fin Du Monde, Val-Dieu Triple, Watou Tripel, Westmalle Tripel.
+
+examples
+High-strength, pale-color, top-fermented, western-european, traditional-style, bitter
+
+Vital Statistics
+ABV: 7.5% - 9.5%
+FG: 1,008 - 1,014
+IBU: 20 - 40
+OG: 1,075 - 1,085
+
+</div>
+
+<div id="hashtag161">
+Belgian Tripel
+Overall impression
+A dark, complex and very strong Belgian Ale with a delicious blend of malt richness, dark fruit flavors and spicy elements. Complex, rich, smooth and dangerous.
+
+Aroma
+Complex aroma, with a richly sweet malt presence, significant esters, alcohol, and a light to moderate spicy quality. The malt is rich, strong, and can have a deep toasty quality, often with deep caramel complexity. Fruity esters range from strong to moderately low and may contain notes of raisins, plums, dried cherries, figs, or plums. Spicy phenols may be present, but generally have a peppery, not clove-like quality; light vanilla is possible. Alcohols are smooth, spicy, perfumed and/or rose-like, low to moderate in strength. Hops are not usually present (but a very low spicy, floral, or herbal aroma is acceptable). No dark/roasted malt aromas. No aromas of warm alcohols or solvents.
+
+Appearance
+Deep amber to deep copper-brown color (dark in this context implies greater depth of color than gold). Huge, dense, very creamy and persistent foam, of a soft cinnamon color. It can go from clear to somewhat cloudy.
+
+Flavour
+Similar to aroma (same comments about malt, esters, phenols, alcohol and hops apply). Rich, moderate maltiness on the palate, which can give a sweet impression if the bitterness is low. The finish is generally moderately dry to dry, although it can be even moderately sweet. Medium-low to moderate bitterness; with the alcohol providing some balance to the malt. Generally richly malty in balance, quite even bitter. Complex and varied flavors must blend smoothly and harmoniously. The finish should not be heavy or syrupy.
+
+Mouthfeel
+High carbonation but not sharp. Mild but evident alcohol. The body can range from medium-light to medium-full and creamy. Most are medium bodied.
+
+Comments
+Authentic Trappist versions tend to be drier (Belgians would say more digestible) than Abbey versions, which can be sweeter and fuller-bodied. Traditionally bottle conditioned (or bottle refermented). Sometimes known as Quadruple Trappist, most are simply known by their intensity or color designation.
+
+History
+Most versions are unique in character reflecting the characteristics of individual breweries, produced in limited numbers and often highly coveted.
+
+Ingredients
+Belgian yeast strains prone to the production of higher alcohols, esters, and sometimes phenolics are commonly used. It gives the impression of using a complex grain recipe, although many traditional versions are very simple, with sugar syrup or unrefined caramelized sugars and yeasts providing much of the complexity. Saaz type, English type or Styrian Goldings hops are commonly used. Spices are generally not used, and if they are, they are kept subtle and in the background.
+
+Comparison
+Like a more intense Dubbel, with a fuller body and greater malt richness. It is not as bitter or hoppy as a Tripel, but it is similar in intensity.
+
+Commercial Examples
+Achel Extra Brune, Boulevard The Sixth Glass, Chimay Grande Reserve, Gouden Carolus Grand Cru of the Emperor, Rochefort 8 & 10, St. Bernardus Abt 12, Westvleteren 12.
+
+examples
+Very-high-strength, amber-color, top-fermented, western-european, traditional-style, malty
+
+Vital Statistics
+ABV: 8.0% - 12.0%
+FG: 1,010 - 1,024
+IBU: 20 - 35
+OG: 1,075 - 1,110
+
+</div>
+
+<div id="hashtag162">
+Belgian Dark Strong Ale
+Overall impression
+A dark, complex and very strong Belgian Ale with a delicious blend of malt richness, dark fruit flavors and spicy elements. Complex, rich, smooth and dangerous.
+
+Aroma
+Complex aroma, with a richly sweet malt presence, significant esters, alcohol, and a light to moderate spicy quality. The malt is rich, strong, and can have a deep toasty quality, often with deep caramel complexity. Fruity esters range from strong to moderately low and may contain notes of raisins, plums, dried cherries, figs, or plums. Spicy phenols may be present, but generally have a peppery, not clove-like quality; light vanilla is possible. Alcohols are smooth, spicy, perfumed and/or rose-like, low to moderate in strength. Hops are not usually present (but a very low spicy, floral, or herbal aroma is acceptable). No dark/roasted malt aromas. No aromas of warm alcohols or solvents.
+
+Appearance
+Deep amber to deep copper-brown color (dark in this context implies greater depth of color than gold). Huge, dense, very creamy and persistent foam, of a soft cinnamon color. It can go from clear to somewhat cloudy.
+
+Flavour
+Similar to aroma (same comments about malt, esters, phenols, alcohol and hops apply). Rich, moderate maltiness on the palate, which can give a sweet impression if the bitterness is low. The finish is generally moderately dry to dry, although it can be even moderately sweet. Medium-low to moderate bitterness; with the alcohol providing some balance to the malt. Generally richly malty in balance, quite even bitter. Complex and varied flavors must blend smoothly and harmoniously. The finish should not be heavy or syrupy.
+
+Mouthfeel
+High carbonation but not sharp. Mild but evident alcohol. The body can range from medium-light to medium-full and creamy. Most are medium bodied.
+
+Comments
+Authentic Trappist versions tend to be drier (Belgians would say more digestible) than Abbey versions, which can be sweeter and fuller-bodied. Traditionally bottle conditioned (or bottle refermented). Sometimes known as Quadruple Trappist, most are simply known by their intensity or color designation.
+
+History
+Most versions are unique in character reflecting the characteristics of individual breweries, produced in limited numbers and often highly coveted.
+
+Ingredients
+Belgian yeast strains prone to the production of higher alcohols, esters, and sometimes phenolics are commonly used. It gives the impression of using a complex grain recipe, although many traditional versions are very simple, with sugar syrup or unrefined caramelized sugars and yeasts providing much of the complexity. Saaz type, English type or Styrian Goldings hops are commonly used. Spices are generally not used, and if they are, they are kept subtle and in the background.
+
+Comparison
+Like a more intense Dubbel, with a fuller body and greater malt richness. It is not as bitter or hoppy as a Tripel, but it is similar in intensity.
+
+Commercial Examples
+Achel Extra Brune, Boulevard The Sixth Glass, Chimay Grande Reserve, Gouden Carolus Grand Cru of the Emperor, Rochefort 8 & 10, St. Bernardus Abt 12, Westvleteren 12.
+
+examples
+Very-high-strength, amber-color, top-fermented, western-european, traditional-style, malty
+
+Vital Statistics
+ABV: 8.0% - 12.0%
+FG: 1,010 - 1,024
+IBU: 20 - 35
+OG: 1,075 - 1,110
+</div>
+
+
+------------------------------------------------------------------------------------------------------------
+
 22D. Wheatwine 
 Overall Impression: A richly textured, high alcohol sipping 
 beer with a significant grainy, bready flavor, and a sleek body. 
@@ -6654,103 +7032,12 @@ Westvleteren 12
 
 Tags: very-high-strength, amber-color, top-fermented, 
 western-europe, traditional-style, malty 
-27. HISTORICAL BEER 
-The Historical Beer category contains styles that either have all but died out in modern times, or that were much more popular in 
-past times and are now known only through recreations. This category can also be used for traditional or indigenous beers of 
-cultural importance within certain countries. Placing a beer in the historical category does not imply that it is not currently being 
-produced, just that it is a very minor style or perhaps is in the process of rediscovery by craft brewers. 
-Historical Beer can be a minor style, currently commercially produced or not, that is not present in the Style Guidelines as a Classic 
-Style. It could be that we haven’t heard of it, that we never see it in competition, or that we have insufficient data to prepare a 
-reasonable set of judging guidelines. If it is a style with a name that is or was actually used, then it likely goes into this category. This 
-style is not for experimental beers that were never produced, or for other Classic Styles with added Specialty-Type ingredients. 
-Any Historical Beer listed in this category or contained on the Provisional Style list is considered a Classic Style for purposes of 
-entering in Specialty-Type beer categories with added ingredients (fruit, spice, wood, smoke, etc.). This means a Historical Style beer 
-can be used as a base style for Specialty-Type beers without automatically making the beer Experimental. 
-The BJCP welcomes well-researched submissions of Historical Styles that may be appropriate for our Provisional Styles list on our 
-website, or for a future inclusion in these Guidelines. 
-Entry Instructions: The entrant must either specify a style with a BJCP-supplied description from the list below, or specify a 
-different historical beer style that is not described elsewhere in these guidelines. In the case of a style that has changed substantially 
-over the years (such as Porter or Stout), the entrant may specify an existing BJCP style as well as an era (e.g., 1820 English Porter). 
-When the entrant specifies any style not on the BJCP-supplied list in this category or on the Provisional Style list, the entrant must 
-provide a description of the style for the judges in sufficient detail to allow the beer to be judged. If a beer is entered with just a style 
-name and no description, it is very unlikely that judges will understand how to judge it. Currently defined examples: Kellerbier, 
-Kentucky Common, Lichtenhainer, London Brown Ale, Piwo Grodziskie, Pre-Prohibition Lager, Pre-Prohibition Porter, Roggenbier, 
-Sahti. 
-Historical Beer: Kellerbier 
-The original Kellerbier is a Märzen-type lager from the 
-Franconia region of Germany, but other traditional versions 
-are based on Munich Helles and Dunkel lagers. Variations 
-based on Pils are a more modern invention with a wider 
-international following and higher production. 
-Overall Impression: An unfiltered, unpasteurized, fully-
-attenuated German lager traditionally served from lagering 
-vessels. May be a little richer, more robust, and rustic than the 
-base styles. A fresh beer without fermentation defects 
-associated with young, green (unfinished) beer. 
-
-Aroma:  Reflects base style. May have an added bready, yeasty 
-character from the yeast. Clean. Pale versions can have a more 
-robust hop character. Dark versions can have a richer malt 
-profile. 
-Appearance: Reflects base style. Can be somewhat hazy or 
-cloudy, but never murky. Likely a little darker in appearance 
-than the base style. 
-
-Flavor:  Reflects base style. May have an added bready, yeasty 
-character from the yeast. Pale versions can have a more robust 
-hop character. Dark versions can have a richer malt profile, but 
-should never be roasty. May be slightly more bitter than the 
-base style, and be a little heavier in the finish. Fully fermented 
-with a clean fermentation profile; should not have eggy, 
-buttery, apple-like, or similar flaws. 
-
-Mouthfeel : Reflects base style. May have a bit more body and 
-a creamier texture than the base style. Carbonation typical of 
-the base style, but may be lower. 
-Comments: A traditional serving style more than a beer style, 
-yet these beers do have sensory differences from the base 
-beers. Judge these somewhat like Specialty-Type Beers; 
-consider the range of kellerbiers based on Helles to Märzen to 
-Dunkel to be a continuous spectrum, so allow the brewer to 
-pick the closest one without being too picky about strict 
-adherence to the base style. 
-The name literally means cellar beer, and is a natural, gentle 
-handling of fresh-tasting German lagerbier for seasonal, on-
-premise service. Like British Bitters, best enjoyed locally as the 
-bottled examples may lack the characteristic freshness. 
-
-History: Originally referred to lager beer matured in the caves 
-or cellars under the brewery, and then served from them. First 
-applied to amber lager from Franconia, then later to local 
-Munich styles. More recently used internationally to create 
-specialty Pils variants. By tradition, a serving style for a 
-popular summer specialty in Bavaria, but now adapted broadly 
-as a marketing term for unfiltered lagers. 
-
-Characteristic Ingredients: Same as base styles. 
-Traditionally naturally carbonated. Dry-hopping is not a 
-traditional German brewing method, but some modern pale 
-examples use this technique – which is allowable in this style 
-as long as it is balanced. Traditionally lagered and unfiltered, 
-these beers were never meant to be packaged for external sale. 
-Style Comparison: Richer or more robust than the base 
-style, possibly with a bit more body and 
-Mouthfeel . Can be 
-slightly cloudier than base beer. 
-Entry Instructions: The entrant must specify the base style: 
-German Pils, Munich Helles, Märzen, or Munich Dunkel. 
-
-Vital Statistics: Same as base style. 
-
-Commercial Examples: Märzen – Faust Kräusen 
-Naturtrüb, Mahrs Bräu aU Ungespundet Kellerbier; Dunkel – 
-Engel Kellerbier Dunkel, Paulaner Ur-Dunkel Naturtrüb; 
-Helles – ABK Kellerbier Naturtrüb, Löwenbräu 1747 Original; 
-Pils – Giesinger Feines Pilschen, Ketterer Zwickel-Pils 
 
 
-Tags: standard-strength, bottom-fermented, central-europe, 
-traditional-style, balanced 
+
+
+
+
 Historical Beer: Kentucky Common 
 Overall Impression: A clean, dry, refreshing, slightly malty 
 dark beer with high carbonation. Mild-tasting, with light toast 

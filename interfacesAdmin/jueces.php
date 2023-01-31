@@ -112,16 +112,16 @@ $filas_2 = mysqli_fetch_all($query_2, MYSQLI_ASSOC);
                     ?>
                     <!--  -->
                     <div>
-                        <?php 
-                            if ($next!=null) {
-                                ?>
-                                    <input type="hidden" name="Id_juz"  value="<?=$next->Id+1?>" readonly>
-                                <?php
-                            }else {
-                                ?>
-                                <input type="hidden" name="Id_juz"  value="1" readonly>
-                                <?php
-                            }
+                        <?php
+                        if ($next!=null) {
+                            ?>
+                            
+                            <?php
+                        }else {
+                            ?>
+                            <input type="hidden" name="Id_juz"  value="1" readonly>
+                            <?php
+                        }
                         ?>
                         
                     </div>

@@ -21,15 +21,13 @@ body{
 /* card del login */
 .container{
     width: 400px;
-    height: 570px;
-    background: rgba(119, 117, 86, 0.445);
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
+    margin: auto;
+    background: rgba(119, 117, 86, 0.418);
+    top: 5%;
+    position: relative;
     box-sizing: border-box;
     border-radius: 10px;
-    padding: 70px 30px;
+    padding: 50px 30px;
 }
 
 /* color y tamaño de la letra del menu */
@@ -67,6 +65,12 @@ body{
     color: #fff;
 }
 
+.container input[type="file"]{
+    height: 40px;
+    color: white;
+    font-size: 16px;
+}
+
 .container input[type="submit"],
 .container input[type="button"]{
     border: none;
@@ -83,6 +87,20 @@ body{
 .container input[type="submit"]:hover,
 .container input[type="button"]:hover{
     transform: scale(1.10);
+}
+
+/* estilo que se le da a la foto de perfil del usuario */
+.fotoPerfil{
+    height: 220px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+i{
+    font-size: 100px;
+    margin-bottom: 20px;
+    color: #fff;
 }
 
 

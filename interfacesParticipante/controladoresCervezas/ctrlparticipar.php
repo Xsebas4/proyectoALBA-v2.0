@@ -11,14 +11,7 @@ if (!empty($_POST['btnparticipar'])) {
         $dato=$sql->fetch_object();
         $evento=$dato->Id_evento;
 
-        $sql=$conexion->query("SELECT * FROM evento_usuarios WHERE fk_usuarios=$id");
-        $alt=$sql->fetch_object();
-
-        if ($alt!=null) {
-            $sql=$conexion->query("UPDATE evento_usuarios SET fk_evento=$evento WHERE fk_usuarios=$id");
-        }else {
-            $sql=$conexion->query("INSERT INTO evento_usuarios (fk_evento,fk_usuarios) VALUES ($evento,$id)");
-        }
+        $sql=$conexion->query("UPDATE evento_usuarios SET fk_evento=$evento WHERE fk_usuarios=$id");
 
         if ($sql==1){
             echo '<div>

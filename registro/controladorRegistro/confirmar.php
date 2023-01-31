@@ -22,7 +22,7 @@ if (isset($_GET['correo'])) {
     <title>Confirmar</title>
     <link rel="stylesheet" href="http://localhost/proyectoalba/css/confirmar2.css">
     <link rel="stylesheet" href="../../css/confirmar2.css">
-    <link rel="icon" href="../../img/LOGO ALBA V.png">
+    <link rel="icon" href="../../img/Logo.png">
 </head>
 <body>
 

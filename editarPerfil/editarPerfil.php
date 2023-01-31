@@ -5,6 +5,7 @@ include "../config/conexion.php";
 $id=$_GET["Id_usuario"];
 
 $sql=$conexion->query(" SELECT * FROM usuarios WHERE Id_usuario=$id ");
+$resultados=$sql->fetch_assoc()
 
 ?>
 
@@ -17,6 +18,9 @@ $sql=$conexion->query(" SELECT * FROM usuarios WHERE Id_usuario=$id ");
     <title>Editar perfil</title>
     <link rel="stylesheet" href="http://localhost/proyectoalba/css/editarPerfil2.css">
     <link rel="stylesheet" href="../css/editarPerfil2.css">
+    <link rel="icon" href="../img/Logo.png">
+	    <!-- llamado de los iconos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
 </head>
 <body>
 
@@ -28,30 +32,49 @@ $sql=$conexion->query(" SELECT * FROM usuarios WHERE Id_usuario=$id ");
 
     <?php 
     include "controladorEditarPerfil.php";
-    while($datos=$sql->fetch_object()){?>
+    ?>
 
-    <form method="post">
+    <form method="post" enctype="multipart/form-data">
 
         <input type="hidden" name="Id_usuario" value="<?= $_GET["Id_usuario"]?>">
 
+        <div class="foto">
+                <label>Foto de perfil</label>
+                <?php 
+
+                if ($resultados["Foto"] != "") {
+
+                    echo '<img class="fotoPerfil" src="data:image/jpg;base64,'. base64_encode($resultados["Foto"]).'" alt="Foto">';
+                    
+                } else {
+
+                    echo '<i class="bi bi-person-circle"></i>';
+                    
+                }
+                
+                ?>
+
+                <input type="file" accept="image/png, image/gif, image/jpeg" name="foto" value="">
+        </div>
+
         <div class="nombre">
             <label>Nombre</label>
-            <input class="mayuscula" type="text" name="nombre" value="<?= $datos->Nombre ?>">
+            <input id="limite" class="mayuscula" type="text" name="nombre" value="<?php echo $resultados['Nombre'] ?>">
         </div>
 
         <div class="apellido">
             <label>Apellido</label>
-            <input class="mayuscula" type="text" name="apellido" value="<?= $datos->Apellido ?>">
+            <input id="limite" class="mayuscula" type="text" name="apellido" value="<?php echo $resultados['Apellido'] ?>">
         </div>
 
         <div class="telefono">
             <label>Teléfono</label>
-            <input type="tel" name="telefono" value="<?= $datos->Telefono ?>">
+            <input type="tel" name="telefono" value="<?php echo $resultados['Telefono'] ?>">
         </div>
 
         <div class="contraseña">
             <label>Contraseña</label>
-            <input type="text" name="contraseña" value="<?= $datos->Contrasena ?>">
+            <input type="text" name="contraseña" value="<?php echo $resultados['Contrasena'] ?>">
         </div>
 
         <input type="submit" name="editarPerfil" value="Guardar">
@@ -61,14 +84,16 @@ $sql=$conexion->query(" SELECT * FROM usuarios WHERE Id_usuario=$id ");
 
     </form>
 
-    <?php }
-    ?>
+
 
     </div>
 	
 	<!-- javascript para que al ingresar los datos estos comiecen con letra mayuscula -->
     <script src="../js/mayuscula2.js"></script>
 
+	
+	<!-- javascript para poner lmite de caracteres en algunos datos -->
+    <script src="../js/limite.js"></script>
+
 </body>
 </html>
-

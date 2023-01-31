@@ -23,12 +23,9 @@
         <div>
 
         <form action="" method="POST">
-
-            <label for="">Nombre</label>
-            <input type="text" id="nombre" name="nombre">
             
             <label for="">Correo</label>
-            <input type="email" id="correo" name="correo">
+            <input type="email" id="correo" name="correo" required>
 
             <input type="submit" name="recuperar" value="Enviar">
             <input type="button" onclick="history.back()" value="Regresar">

@@ -26,8 +26,23 @@
 
             <!-- icono y perfil -->
             <div class="icono_nombre_perfil">
+               
+			   
+            <?php 
+
+            if ($_SESSION["Foto"] != "") {
+
+                echo '<img class="fotoPerfil" src="data:image/jpg;base64,'. base64_encode($_SESSION["Foto"]).'" alt="Foto">';
                 
-                <i class="bi bi-person-circle"></i>
+            } else {
+
+                echo '<i class="bi bi-person-circle"></i>';
+                
+            }
+            
+            ?>
+			   
+			   
                 <h4><?php echo$_SESSION["Nombre"]." ".$_SESSION["Apellido"]; ?></h4>
 
                 <!-- icono del lapiz editar -->
@@ -57,6 +72,13 @@
                 </div>
             </a>
 
+            <a href="ultimoevento.php">
+                <div class="option">
+                <i class="bi bi-calendar-event" title="Ultimo evento"></i>
+                <h4>Último evento</h4>
+                </div>
+            </a>
+
             <a href="inscripcionCerveza.php">
                 <div class="option">
                 <i class="bi bi-clipboard2-plus" title="Inscripcion de cervezas"></i>
@@ -77,13 +99,6 @@
                 <h4>Resultados</h4>
                 </div>
             </a>
-            
-            <a href="ultimoevento.php">
-                <div class="option">
-                <i class="bi bi-calendar-event" title="Ultimo evento"></i>
-                <h4>Último evento</h4>
-                </div>
-            </a>
 
             <a href="../login/controladorSalir.php" onclick="return salir()">
                 <div class="option">
@@ -98,3 +113,7 @@
 
     <!-- llamado del archivo js para la animacion del boton del menu -->
     <script src="../js/menuDespegable2.js"></script>
+	
+	    
+	<!-- es para quitar la funcionalidad de la tecla "Tab" -->
+    <script src="../js/quitarTab.js"></script>

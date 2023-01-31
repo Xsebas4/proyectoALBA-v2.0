@@ -57,7 +57,6 @@ if ($datos!=null) {
                 ?>
                 <br>
                 <div class="padre">
-                    <br><br><br>
                     <div class="container">
 
                         <h4>El evento <?=$data->Nombre?> ha terminado</h4>
@@ -68,7 +67,7 @@ if ($datos!=null) {
                                     <input type="hidden" value="ok" name="update">
                                     <button type="submit" name="btnUpdate" value="ok" style="color:white;">Ver podio <?=$data->Nombre?></button>
                                 </form>
-                            </div>
+                        </div>
                         
                         <?php include "podio/fork.php";?>
                         

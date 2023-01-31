@@ -15,13 +15,22 @@ if (!empty($_POST["registrarse"])) {
 
         $rol=$_POST["rol"];
         
+
         /* aqui se hace la condicion segun el rol del usuario para la hora de guardar sus datos */
         if ($rol == 2) {
 
             include "correo.php";
             $rango=$_POST["rango"];
+
             $sql=$conexion->query(" INSERT INTO usuarios (DNI, Nombre, Apellido, Telefono, Correo, Contrasena, Hash512, Rol, fk_rango_competidor, fk_rango_juez, fk_region, Activado, Codigo) VALUES ('$DNI', '$nombre', '$apellido', '$telefono', '$correo', '$contraseña', '$hash', '$rol', NULL, '$rango', NULL, 0, '$codigo') ");
-           
+            
+            $sql=$conexion->query("SELECT * FROM usuarios WHERE Correo='$correo' AND DNI=$DNI");
+                $alt=$sql->fetch_object();
+                    $id=$alt->Id_usuario;
+
+            $sql=$conexion->query("SELECT * FROM evento ORDER BY Id_evento DESC LIMIT 0,1");
+                $alt=$sql->fetch_object();
+                    $evento=$alt->Id_evento;
 
         } elseif ($rol == 3) {
             
@@ -30,7 +39,17 @@ if (!empty($_POST["registrarse"])) {
             $region=$_POST["region"];
             $sql=$conexion->query(" INSERT INTO usuarios (DNI, Nombre, Apellido, Telefono, Correo, Contrasena, Hash512, Rol, fk_rango_competidor, fk_rango_juez, fk_region, Activado, Codigo) VALUES ('$DNI', '$nombre', '$apellido', '$telefono', '$correo', '$contraseña', '$hash', '$rol', '$rango', NULL, '$region', 0, '$codigo') ");
 
+            $sql=$conexion->query("SELECT * FROM usuarios WHERE Correo='$correo' AND DNI=$DNI");
+                $alt=$sql->fetch_object();
+                    $id=$alt->Id_usuario;
+
+            $sql=$conexion->query("SELECT * FROM evento ORDER BY Id_evento DESC LIMIT 0,1");
+                $alt=$sql->fetch_object();
+                    $evento=$alt->Id_evento;
+
+            $sql=$conexion->query("INSERT INTO evento_usuarios (fk_evento,fk_usuarios) VALUES ($evento,$id)");
         }
+        
 
         if ($sql == 1) {
             
@@ -40,7 +59,7 @@ if (!empty($_POST["registrarse"])) {
             echo '<div class="verificado">
             <script language="javascript">
             
-            alert("Revise tu correo");
+            alert("Revise su correo");
             history.pushState(null, null, window.location.href);
             window.location.href="../../index.php";
             </script>

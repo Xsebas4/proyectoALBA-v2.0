@@ -24,6 +24,10 @@ include '../config/conexion.php';
     <link rel="icon" href="../img/Logo.png">
 </head>
 <body>
+    <!-- <div>
+        <button><a href="inicioParticipante.php">Volver</a></button>
+    </div>
+    <hr> -->
 
     <?php 
         include "menuParticipante.php";

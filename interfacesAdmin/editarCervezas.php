@@ -8,25 +8,13 @@ if (empty($_SESSION["Id_usuario"])) {
     session_destroy();
     header("location: ../login/login.php");
 }
+?>
+
+<?php
 include "../config/conexion.php";
 if(!$conexion){
-    die("<br/>Sin conexi&oacute;n.");
-    };
-
-$sql=$conexion->query("SELECT * FROM evento ORDER BY Id_evento DESC LIMIT 0,1");
-$alt=$sql->fetch_object();
-if ($alt!=null) {
-    $name=$alt->Nombre;
-    if ($name!=null) {
-        $evento=$alt->Id_evento;
-    }else {
-        $sql=$conexion->query("SELECT * FROM evento ORDER BY Id_evento DESC LIMIT 1,1");
-        $alt=$sql->fetch_object();
-        $evento=$alt->Id_evento;
-    }
-
-
-
+  die("<br/>Sin conexi&oacute;n.");
+};
 
 /*obtenemos los datos del primer select para categorias*/
 $sql = "SELECT * FROM categorias";
@@ -39,10 +27,10 @@ mysqli_close($conexion);
 include "../config/conexion.php";
 
 /* obtenemos los datos de usuario */
-$sql_2 = "SELECT Id_usuario,usuarios.Nombre FROM usuarios
-INNER JOIN evento_usuarios ON evento_usuarios.fk_usuarios=usuarios.Id_usuario
-INNER JOIN evento ON evento.Id_evento=evento_usuarios.fk_evento
-WHERE usuarios.Rol!=1 && usuarios.Rol!=2 && evento.Id_evento=$evento";
+$sql_2 = "SELECT usuarios.Id_usuario, usuarios.Nombre, rango_competidor.Nombre AS Rango 
+FROM usuarios 
+INNER JOIN rango_competidor ON rango_competidor.Id_rango_competidor=usuarios.fk_rango_competidor
+WHERE Rol != 1 AND Rol !=2";
 $query_2 = mysqli_query($conexion, $sql_2);
 $filas_2 = mysqli_fetch_all($query_2, MYSQLI_ASSOC); 
 mysqli_close($conexion);
@@ -56,7 +44,7 @@ mysqli_close($conexion);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cervezas</title>
-    <link rel="stylesheet" href="http://localhost/proyectoalba/css/editarCervezas3.css">
+
     <link rel="stylesheet" href="../css/editarCervezas3.css">
     <link rel="icon" href="../img/Logo.png">
     <!-- llamada de iconos -->
@@ -80,27 +68,27 @@ mysqli_close($conexion);
 
         //Ejecutar accion al cambiar de opcion en el select de las bandas
         $('#categorias').change(function(){
-        var Id_categoria = $(this).val(); //obtener el id seleccionado
+          var Id_categoria = $(this).val(); //obtener el id seleccionado
 
-        if(Id_categoria !== ''){ //verificar haber seleccionado una opcion valida
+          if(Id_categoria !== ''){ //verificar haber seleccionado una opcion valida
 
             /*Inicio de llamada ajax*/
             $.ajax({
-            data: {Id_categoria:Id_categoria}, //variables o parametros a enviar, formato => nombre_de_variable:contenido
-            dataType: 'html', //tipo de datos que esperamos de regreso
-            type: 'POST', //mandar variables como post o get
-            url: './controladoresCervezas/getEstilos.php' //url que recibe las variables
+              data: {Id_categoria:Id_categoria}, //variables o parametros a enviar, formato => nombre_de_variable:contenido
+              dataType: 'html', //tipo de datos que esperamos de regreso
+              type: 'POST', //mandar variables como post o get
+              url: './controladoresCervezas/getEstilos.php' //url que recibe las variables
             }).done(function(data){ //metodo que se ejecuta cuando ajax ha completado su ejecucion             
 
-            estilos.html(data); //establecemos el contenido html de discos con la informacion que regresa ajax             
-            estilos.prop('disabled', false); //habilitar el select
+              estilos.html(data); //establecemos el contenido html de discos con la informacion que regresa ajax             
+              estilos.prop('disabled', false); //habilitar el select
             });
             /*fin de llamada ajax*/
 
-        }else{ //en caso de seleccionar una opcion no valida
+          }else{ //en caso de seleccionar una opcion no valida
             estilos.val(''); //seleccionar la opcion "- Seleccione -", osea como reiniciar la opcion del select
             estilos.prop('disabled', true); //deshabilitar el select
-        }    
+          }    
         });
         
 
@@ -123,16 +111,11 @@ mysqli_close($conexion);
 </head>
 
     <?php 
-<<<<<<< HEAD
-        include("menuAdmin.php");            
-=======
         include("menuAdmin.php");
         
         $sql=$conexion->query("SELECT * FROM evento ORDER BY Id_evento DESC LIMIT 0,1");
         $alt=$sql->fetch_object();
         if ($alt!=null) {
-            
->>>>>>> main
         include "../config/conexion.php";
     ?>
 
@@ -164,7 +147,7 @@ mysqli_close($conexion);
                     <select id="usuario" name="usuario" type="number" class="form-control">
                         <option value="" selected disabled> Seleccione usuario </option>
                         <?php foreach ($filas_2 as $op_2): //llenar las opciones del select usuario ?>
-                        <option value="<?= $op_2['Id_usuario'] ?>"><?= $op_2['Nombre'] ?></option>  
+                        <option value="<?= $op_2['Id_usuario'] ?>"><?= $op_2['Nombre']." - ".$op_2['Rango']?></option>  
                         <?php endforeach; ?>
                     </select>                
                 </div>
@@ -227,7 +210,7 @@ mysqli_close($conexion);
                         INNER JOIN categorias ON categorias.Id_categoria=estilos.fk_categoria AND estilos.Id_estilo = cerveza.fk_estilo
                         INNER JOIN evento_usuarios ON usuarios.Id_usuario=evento_usuarios.fk_usuarios
                         INNER JOIN evento ON evento_usuarios.fk_evento=evento.Id_evento
-                        WHERE evento_usuarios.fk_evento=$evento");
+                        WHERE evento_usuarios.fk_evento=$i+1 AND usuarios.Rol!=1");
                         /* se crea un while para listar los datos y se repite la la cantidad de filas de la tabla*/
                         while($datos=$sql->fetch_object()){ 
                         ?>
@@ -389,7 +372,14 @@ mysqli_close($conexion);
                 ?>
 
             <?php
-                    
+                    }else {
+                        echo "<div style='color: white;
+                        margin-top: 20%;
+                        padding: 0 0 20px 0;
+                        text-align: center;
+                        color: #fff;
+                        font-size: 50px;'>Debes registrar al menos un evento</div>";
+                    }
                 ?>
 
     </div>
@@ -398,19 +388,3 @@ mysqli_close($conexion);
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>
-<<<<<<< HEAD
-
-<?php    
-}else {
-    echo "<div style='color: white;
-                        margin-top: 20%;
-                        padding: 0 0 20px 0;
-                        text-align: center;
-                        color: #fff;
-                        font-size: 50px;'>Debes registrar al menos un evento</div>";
-}
-
-?>
-
-=======
->>>>>>> main

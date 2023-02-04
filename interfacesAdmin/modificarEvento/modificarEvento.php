@@ -15,7 +15,11 @@ $sql=$conexion->query(" SELECT * FROM evento WHERE Id_evento=$id ");
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modificar Evento</title>
+<<<<<<< HEAD
 
+=======
+    <link rel="stylesheet" href="http://localhost/proyectoalba/css/modificarEvento2.css">
+>>>>>>> main
     <link rel="stylesheet" href="../../css/modificarEvento2.css">
     <link rel="icon" href="../../img/Logo.png">
 </head>

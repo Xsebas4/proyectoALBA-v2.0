@@ -22,7 +22,11 @@ $Id_usuario=$_SESSION['Id_usuario'];
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juzgamientos</title>
+<<<<<<< HEAD
 
+=======
+    <link rel="stylesheet" href="http://localhost/proyectoalba/css/juzgamiento3.css">
+>>>>>>> main
     <link rel="stylesheet" href="../css/juzgamiento3.css">
     <link rel="icon" href="../img/Logo.png">
     <!-- llamada de iconos -->

@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recuperar contraseña</title>
+<<<<<<< HEAD
 
+=======
+    <link rel="stylesheet" href="http://localhost/proyectoalba/css/recuperarContrasena3.css">
+>>>>>>> main
     <link rel="stylesheet" href="../css/recuperarContrasena3.css">
     <link rel="icon" href="../img/Logo.png">
 </head>

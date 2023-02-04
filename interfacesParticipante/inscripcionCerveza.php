@@ -41,7 +41,11 @@ $filas_2 = mysqli_fetch_all($query_2, MYSQLI_ASSOC);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cervezas</title>
+<<<<<<< HEAD
 
+=======
+    <link rel="stylesheet" href="http://localhost/proyectoalba/css/inscripcionCerveza.css">
+>>>>>>> main
     <link rel="stylesheet" href="../css/inscripcionCerveza.css">
     <link rel="icon" href="../img/Logo.png">
     <!-- llamada de iconos -->

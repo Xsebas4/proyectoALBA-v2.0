@@ -30,7 +30,11 @@ if ($datos!=null) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
+<<<<<<< HEAD
 
+=======
+    <link rel="stylesheet" href="http://localhost/proyectoalba/css/inicioParticipante4.css">
+>>>>>>> main
     <link rel="stylesheet" href="../css/inicioParticipante4.css">
     <link rel="icon" href="../img/Logo.png">
 </head>

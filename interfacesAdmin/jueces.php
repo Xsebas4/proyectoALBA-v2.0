@@ -28,7 +28,11 @@ INNER JOIN usuarios ON evento_usuarios.fk_usuarios = usuarios.Id_usuario
 INNER JOIN cerveza ON usuarios.Id_usuario=cerveza.fk_usuario
 INNER JOIN estilos ON cerveza.fk_estilo = estilos.Id_estilo 
 INNER JOIN categorias ON estilos.fk_categoria=categorias.Id_categoria
+<<<<<<< HEAD
 WHERE evento.Id_evento=$evento && cerveza.Pendiente=1";
+=======
+WHERE evento.Id_evento=$evento";
+>>>>>>> main
 $query = mysqli_query($conexion, $sql);
 $filas = mysqli_fetch_all($query, MYSQLI_ASSOC); 
 
@@ -55,7 +59,11 @@ $filas_2 = mysqli_fetch_all($query_2, MYSQLI_ASSOC);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asignar mesas/jueces</title>
+<<<<<<< HEAD
 
+=======
+    <link rel="stylesheet" href="http://localhost/proyectoalba/css/jueces2.css">
+>>>>>>> main
     <link rel="stylesheet" href="../css/jueces2.css">
     <link rel="icon" href="../img/Logo.png">
 
@@ -66,11 +74,15 @@ $filas_2 = mysqli_fetch_all($query_2, MYSQLI_ASSOC);
 
 <script>
     function reestablecer() {
+<<<<<<< HEAD
 		setTimeout(() => {
 			document.getElementById('form').reset();
 		}, 100);
 
         
+=======
+        document.getElementById('formul').reset
+>>>>>>> main
     };
     function eliminar(){
         var respuesta=confirm("Estás a punto de eliminar un JUZGAMIENTO. ¿Deseas eliminar?");
@@ -156,7 +168,11 @@ $filas_2 = mysqli_fetch_all($query_2, MYSQLI_ASSOC);
 
                 </div>
             
+<<<<<<< HEAD
             <button type="submit" class="btn btn-primary" name="btnasignar" value="ok" onclick="reestablecer()">Registrar</button>
+=======
+            <button type="submit" class="btn btn-primary" name="btnasignar" value="ok" onclick=reestablecer()>Registrar</button>
+>>>>>>> main
             
         </form>
     

@@ -63,12 +63,20 @@
 
             <div class="nombre">
                 <label>Nombre</label>
+<<<<<<< HEAD
                 <input class="mayuscula limite" type="text" name="nombre" onkeydown="if (event.keyCode === 13) { event.preventDefault(); document.getElementById('apellido').focus(); }">
+=======
+                <input id="limite" class="mayuscula" type="text" name="nombre" onkeydown="if (event.keyCode === 13) { event.preventDefault(); document.getElementById('apellido').focus(); }">
+>>>>>>> main
             </div>
 
             <div class="apellido">
                 <label>Apellido</label>
+<<<<<<< HEAD
                 <input class="mayuscula limite" type="text" name="apellido" onkeydown="if (event.keyCode === 13) { event.preventDefault(); document.getElementById('telefono').focus(); }">
+=======
+                <input id="limite" class="mayuscula" type="text" name="apellido" onkeydown="if (event.keyCode === 13) { event.preventDefault(); document.getElementById('telefono').focus(); }">
+>>>>>>> main
             </div>
 
             <div class="telefono">

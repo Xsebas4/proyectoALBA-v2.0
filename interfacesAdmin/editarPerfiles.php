@@ -17,7 +17,11 @@ if (empty($_SESSION["Id_usuario"])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfiles</title>
+<<<<<<< HEAD
 
+=======
+    <link rel="stylesheet" href="http://localhost/proyectoalba/css/editarPerfilesAdmin2.css">
+>>>>>>> main
     <link rel="stylesheet" href="../css/editarPerfilesAdmin2.css">
     <link rel="icon" href="../img/Logo.png">
     <!-- llamado de los iconos -->
@@ -93,12 +97,20 @@ if (empty($_SESSION["Id_usuario"])) {
 
             <div class="nombre">
                 <label>Nombre</label>
+<<<<<<< HEAD
                 <input class="mayuscula limite" type="text" name="nombre" onkeydown="if (event.keyCode === 13) { event.preventDefault(); document.getElementById('apellido').focus(); }">
+=======
+                <input id="limite" class="mayuscula" type="text" name="nombre" onkeydown="if (event.keyCode === 13) { event.preventDefault(); document.getElementById('apellido').focus(); }">
+>>>>>>> main
             </div>
 
             <div class="apellido">
                 <label>Apellido</label>
+<<<<<<< HEAD
                 <input class="mayuscula limite" type="text" name="apellido" onkeydown="if (event.keyCode === 13) { event.preventDefault(); document.getElementById('telefono').focus(); }">
+=======
+                <input id="limite" class="mayuscula" type="text" name="apellido" onkeydown="if (event.keyCode === 13) { event.preventDefault(); document.getElementById('telefono').focus(); }">
+>>>>>>> main
             </div>
 
             <div class="telefono">

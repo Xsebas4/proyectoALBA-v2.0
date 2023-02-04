@@ -2,12 +2,20 @@
 <div class="modal fade" id="deleteChildresn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
+<<<<<<< HEAD
       <div style="background: rgba(65, 64, 59, 0.445);" class="modal-header">
+=======
+      <div style="background: rgba(119, 117, 86, 0.445);" class="modal-header">
+>>>>>>> main
             <h4 class="modal-title" style="text-align: center; color:white;">
               <?=$data->Nombre?> || Ver juzgamientos de la Cerveza:
             </h4>
       </div>
+<<<<<<< HEAD
       <div style="background: rgba(65, 64, 59, 0.445);" class="modal-body">
+=======
+      <div style="background: rgba(119, 117, 86, 0.445);" class="modal-body">
+>>>>>>> main
       
         <?php
        /*  cerveza.Nombre AS Cerveza,cerveza.Codigo, usuarios.Nombre AS Usuario, rango_competidor.Nombre AS Rango  */

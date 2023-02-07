@@ -17,7 +17,15 @@ if (empty($_SESSION["Id_usuario"])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+    <link rel="stylesheet" href="https://pruebas.migtutor.com/css/inicioJuez3.css">
+>>>>>>> main
+>>>>>>> main
     <link rel="stylesheet" href="../css/inicioJuez3.css">
     <link rel="icon" href="../img/Logo.png">
 </head>

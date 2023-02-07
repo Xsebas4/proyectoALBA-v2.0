@@ -1,4 +1,8 @@
 <?php
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 $servername = "localhost";
 $database = "u730587483_alba";
 $username = "u730587483_root";
@@ -10,6 +14,17 @@ if (!$conexion) {
 die("Connection failed: " . mysqli_connect_error());
 }
 ?>
+<<<<<<< HEAD
+=======
 
 
+=======
+>>>>>>> main
+
+
+<<<<<<< HEAD
+=======
+?>
+>>>>>>> main
+>>>>>>> main
 

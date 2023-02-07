@@ -56,19 +56,14 @@
         
         <form method="post">
 
-            <div class="DNI">
-                <label>DNI</label>
-                <input type="number" name="DNI" onkeydown="if (event.keyCode === 13) { event.preventDefault(); document.getElementById('nombre').focus(); }">
-            </div>
-
             <div class="nombre">
                 <label>Nombre</label>
-                <input id="limite" class="mayuscula" type="text" name="nombre" onkeydown="if (event.keyCode === 13) { event.preventDefault(); document.getElementById('apellido').focus(); }">
+                <input class="mayuscula limite" type="text" name="nombre" onkeydown="if (event.keyCode === 13) { event.preventDefault(); document.getElementById('apellido').focus(); }">
             </div>
 
             <div class="apellido">
                 <label>Apellido</label>
-                <input id="limite" class="mayuscula" type="text" name="apellido" onkeydown="if (event.keyCode === 13) { event.preventDefault(); document.getElementById('telefono').focus(); }">
+                <input class="mayuscula limite" type="text" name="apellido" onkeydown="if (event.keyCode === 13) { event.preventDefault(); document.getElementById('telefono').focus(); }">
             </div>
 
             <div class="telefono">

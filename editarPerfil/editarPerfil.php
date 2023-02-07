@@ -16,14 +16,19 @@ $resultados=$sql->fetch_assoc()
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editar perfil</title>
-    <link rel="stylesheet" href="http://localhost/proyectoalba/css/editarPerfil2.css">
+
     <link rel="stylesheet" href="../css/editarPerfil2.css">
     <link rel="icon" href="../img/Logo.png">
 	    <!-- llamado de los iconos -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
 </head>
 <body>
-
+<script>
+	function eliminar(){
+        var respuesta=confirm("Estas seguro que deseas eliminar");
+            return respuesta;
+    }
+</script>
 <div class="container">
     
     <div class="form">
@@ -43,12 +48,23 @@ $resultados=$sql->fetch_assoc()
                 <?php 
 
                 if ($resultados["Foto"] != "") {
-
-                    echo '<img class="fotoPerfil" src="data:image/jpg;base64,'. base64_encode($resultados["Foto"]).'" alt="Foto">';
+					include "eliminar.php"; 
+                    echo '<div class="fotoP"><img src="data:image/jpg;base64,'. base64_encode($resultados["Foto"]).'" alt="Foto"></div>'.'
+					<div>
+						<form method="POST">
+							
+							<input type="hidden" value="<?=$id?>" name="usuario">
+							<input type="hidden" value="ok" name="token">
+							
+							<button class="botonEliminar" type="submit" value="ok" name="btn" onclick="return eliminar()">
+								<i class="bi bi-x"></i>
+							</button>
+						</form>
+					</div>';
                     
                 } else {
 
-                    echo '<i class="bi bi-person-circle"></i>';
+                    echo '<div class="iconoP"><i class="bi bi-person-circle"></i></div>';
                     
                 }
                 
@@ -59,12 +75,14 @@ $resultados=$sql->fetch_assoc()
 
         <div class="nombre">
             <label>Nombre</label>
-            <input id="limite" class="mayuscula" type="text" name="nombre" value="<?php echo $resultados['Nombre'] ?>">
+            <input class="mayuscula limite" type="text" name="nombre" value="<?php echo $resultados['Nombre'] ?>">
         </div>
-
+		
+		
+		
         <div class="apellido">
             <label>Apellido</label>
-            <input id="limite" class="mayuscula" type="text" name="apellido" value="<?php echo $resultados['Apellido'] ?>">
+            <input class="mayuscula limite" type="text" name="apellido" value="<?php echo $resultados['Apellido'] ?>">
         </div>
 
         <div class="telefono">
@@ -74,7 +92,9 @@ $resultados=$sql->fetch_assoc()
 
         <div class="contraseña">
             <label>Contraseña</label>
-            <input type="text" name="contraseña" value="<?php echo $resultados['Contrasena'] ?>">
+            <input type="password" name="contraseña" id="contraseña" value="<?php echo $resultados['Contrasena'] ?>">
+			<!-- icono del ojo password -->
+            <span><i class="bi bi-eye" id="ojo"></i></span>
         </div>
 
         <input type="submit" name="editarPerfil" value="Guardar">
@@ -94,6 +114,9 @@ $resultados=$sql->fetch_assoc()
 	
 	<!-- javascript para poner lmite de caracteres en algunos datos -->
     <script src="../js/limite.js"></script>
+	
+	<!-- javascript para la funcionaliodad del ojo de password -->
+    <script src="../js/mostrarOcultarContrasena.js"></script>
 
 </body>
 </html>

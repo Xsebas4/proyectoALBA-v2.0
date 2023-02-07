@@ -62,7 +62,7 @@ try {
                         border-radius: 10px;
                         border: none;
                         color: white;">
-                <a style="text-decoration: none; color: white;" href="http://localhost/proyectoALBA/login/login.php">Iniciar Sesión</a>
+                <a style="text-decoration: none; color: white;" href="https://pruebas.migtutor.com/login/login.php">Iniciar Sesión</a>
                 </button>
                 <br>
                 <br>

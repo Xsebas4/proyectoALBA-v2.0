@@ -11,7 +11,7 @@ $cuantas = mysqli_num_rows($sql);
 ?>
 
 
-<link rel="stylesheet" href="http://localhost/proyectoalba/css/menuDesplegable3.css">
+
 <link rel="stylesheet" href="../css/menuDesplegable3.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
 
@@ -94,7 +94,7 @@ $cuantas = mysqli_num_rows($sql);
                 <a href="notificaciones/index.php">
                     <div class="option">
                     <span class="bi bi-bell" title="Notificaciones"></span>
-                    <span class="bi bi-exclamation" style="color:gold; margin-left: 5px;"></span>
+                    <span class="bi bi-exclamation" style="color:gold; margin-left: 1px; font-size: 25px;"></span>
                     <h4>Notificaciones</h4>
                     </div>
                 </a>

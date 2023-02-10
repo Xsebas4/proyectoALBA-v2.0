@@ -15,15 +15,7 @@ $sql=$conexion->query(" SELECT * FROM usuarios WHERE Id_usuario=$id ");
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modificar Perfil</title>
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
-    <link rel="stylesheet" href="http://localhost/proyectoalba/css/modificarPerfiles3.css">
->>>>>>> main
->>>>>>> main
     <link rel="stylesheet" href="../../css/modificarPerfiles3.css">
     <link rel="icon" href="../../img/Logo.png">
 </head>

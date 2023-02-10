@@ -19,15 +19,7 @@ if (empty($_SESSION["Id_usuario"])) {
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Resultados</title>
 
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
-    <link rel="stylesheet" href="http://localhost/proyectoalba/css/resultados3.css">
->>>>>>> main
->>>>>>> main
     <link rel="stylesheet" href="../../css/resultados3.css">
     <link rel="icon" href="../../img/Logo.png">
     <!-- llamada de iconos -->

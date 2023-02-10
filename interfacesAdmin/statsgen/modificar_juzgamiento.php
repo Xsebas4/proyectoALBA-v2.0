@@ -14,15 +14,7 @@ $sql=$conexion->query("SELECT * FROM general WHERE Id=$id");
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modificar juzgamiento</title>
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
-    <link rel="stylesheet" href="http://localhost/proyectoalba/css/modificarJuzgamiento2.css">
->>>>>>> main
->>>>>>> main
     <link rel="stylesheet" href="../../css/modificarJuzgamiento2.css">
     <link rel="icon" href="../../img/LOGO ALBA V.png">
 </head>

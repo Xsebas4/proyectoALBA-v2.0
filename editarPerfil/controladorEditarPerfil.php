@@ -10,9 +10,6 @@ if (!empty($_POST["editarPerfil"])) {
         $apellido=$_POST["apellido"];
         $telefono=$_POST["telefono"];
         $contraseña=$_POST["contraseña"];
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
         $hash = password_hash($contraseña,PASSWORD_DEFAULT, ['cost'=>10]);
 
         
@@ -57,60 +54,6 @@ if (!empty($_POST["editarPerfil"])) {
             if ($sql == 1) {
 			   
 				include "sql.php";
-=======
-        $foto = addslashes(file_get_contents($_FILES["foto"]["tmp_name"]));
-
->>>>>>> main
-        $hash = password_hash($contraseña,PASSWORD_DEFAULT, ['cost'=>10]);
-
-        
-
-        if (!empty($_FILES["foto"]["tmp_name"])) {
-
-            $foto = addslashes(file_get_contents($_FILES["foto"]["tmp_name"]));
-            $imagen = getimagesize($_FILES['foto']['tmp_name']);
-            $ancho = $imagen[0];
-            $alto = $imagen[1];
-
-            if ($ancho <= 720 && $alto <= 720) {
-
-                $sql=$conexion->query(" UPDATE usuarios SET Nombre='$nombre', Apellido='$apellido', Telefono='$telefono', Contrasena='$contraseña', Foto='$foto', Hash512='$hash' WHERE Id_usuario=$id ");
-
-                if ($sql == 1) {
-                
-                    include "sql.php";
-                    
-        
-                } else {
-                    
-<<<<<<< HEAD
-                    echo "<div style='color: white;
-                    padding: 0 0 20px 0;
-                    text-align: center;
-                    color: #fff;
-                    font-size: 20px;'>Ocurrio un error</div>";
-        
-                }
-
-            } else {
-    
-                echo "<div style='color: white;
-                padding: 0 0 20px 0;
-                text-align: center;
-                color: #fff;
-                font-size: 15px;'>La imagen supera las dimesiones de 720 X 720</div>";
-            }
-        }else {
-            $sql=$conexion->query(" UPDATE usuarios SET Nombre='$nombre', Apellido='$apellido', Telefono='$telefono', Contrasena='$contraseña', Hash512='$hash' WHERE Id_usuario=$id ");
-
-            if ($sql == 1) {
-			   
-				include "sql.php";
-=======
-                };
-				
->>>>>>> main
->>>>>>> main
 				
     
             } else {
@@ -122,27 +65,8 @@ if (!empty($_POST["editarPerfil"])) {
                 font-size: 20px;'>Ocurrio un error</div>";
     
             }
-<<<<<<< HEAD
         }
 
-=======
-<<<<<<< HEAD
-        }
-
-=======
-
-        } else {
-
-            echo "<div style='color: white;
-            padding: 0 0 20px 0;
-            text-align: center;
-            color: #fff;
-            font-size: 15px;'>La imagen que va a utilizar es de un tamaño muy grande</div>";
-        }
-
-
->>>>>>> main
->>>>>>> main
     } else {
         
         echo "<div style='color: white;

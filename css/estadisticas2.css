@@ -15,15 +15,7 @@
 
 /* fondo de la pagina y ajustes del body*/
 body{
-<<<<<<< HEAD
     background-image: radial-gradient(rgba(109, 106, 52, 0.575), rgba(24, 26, 2, 0.2883)), url("../img/pexels-spemone-251591-min.jpg");
-=======
-<<<<<<< HEAD
-    background-image: radial-gradient(rgba(109, 106, 52, 0.575), rgba(24, 26, 2, 0.2883)), url("../img/pexels-spemone-251591-min.jpg");
-=======
-    background-image: radial-gradient(rgba(109, 106, 52, 0.575), rgba(24, 26, 2, 0.2883)), url("../img/pexels-spemone-251591.jpg");
->>>>>>> main
->>>>>>> main
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

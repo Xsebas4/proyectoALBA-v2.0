@@ -11,15 +11,7 @@
 body{
     width: 100%;
     height: 100vh;
-<<<<<<< HEAD
     background-image: linear-gradient(rgba(109, 106, 52, 0.575), rgba(24, 26, 2, 0.2883)), url("../img/pexels-elevate-1269043-min.jpg");
-=======
-<<<<<<< HEAD
-    background-image: linear-gradient(rgba(109, 106, 52, 0.575), rgba(24, 26, 2, 0.2883)), url("../img/pexels-elevate-1269043-min.jpg");
-=======
-    background-image: linear-gradient(rgba(109, 106, 52, 0.575), rgba(24, 26, 2, 0.2883)), url("../img/pexels-elevate-1269043.jpg");
->>>>>>> main
->>>>>>> main
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -63,17 +55,8 @@ body{
 
 /* ajustes de algunos tipos de input */
 .container input[type="text"],
-<<<<<<< HEAD
 .container input[type="tel"],
 .container input[type="password"]{
-=======
-<<<<<<< HEAD
-.container input[type="tel"],
-.container input[type="password"]{
-=======
-.container input[type="tel"]{
->>>>>>> main
->>>>>>> main
     border: none;
     border-bottom: 1px solid #fff;
     background: transparent;
@@ -83,10 +66,6 @@ body{
     color: #fff;
 }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> main
 /* la position del div contraseña sea relativo para asi poder acomodar el ojo de contraseña */
 .container .contraseña{
     position: relative;
@@ -101,11 +80,6 @@ body{
     right: 3%;
 }
 
-<<<<<<< HEAD
-=======
-=======
->>>>>>> main
->>>>>>> main
 .container input[type="file"]{
     height: 40px;
     color: white;
@@ -130,18 +104,12 @@ body{
     transform: scale(1.10);
 }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> main
 /* estilo que se le da al div donde se encunetra a la foto de perfil del usuario */
 .fotoP{
     width: 200px;
     height: 200px;
     border-radius: 70%;
     margin: auto;
-<<<<<<< HEAD
-=======
     margin-top: 20px;
     margin-bottom: 20px;
     overflow: hidden;
@@ -165,49 +133,10 @@ body{
 /* estilo que se le da al icono de perfil predeterminado */
 .iconoP i{
     font-size: 110px;
-=======
-/* estilo que se le da a la foto de perfil del usuario */
-.fotoPerfil{
-    height: 220px;
-    border-radius: 20px;
->>>>>>> main
-    margin-top: 20px;
-    margin-bottom: 20px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* tamaño a la que se va a encontrar la foto de perfil del usuario dentro del div principal */
-.fotoP img{
-    width: 105%;
-}
-
-<<<<<<< HEAD
-/* div donde se encuentra el icono de perfil predeterminado */
-.iconoP{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* estilo que se le da al icono de perfil predeterminado */
-.iconoP i{
-    font-size: 110px;
-=======
-i{
-    font-size: 100px;
->>>>>>> main
->>>>>>> main
     margin-bottom: 20px;
     color: #fff;
 }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> main
 /* el div con la clase foto para poder mover luego el icono de la "X" */
 .foto{
     position: relative;
@@ -230,11 +159,6 @@ i{
 }
 
 
-<<<<<<< HEAD
-=======
-=======
->>>>>>> main
->>>>>>> main
 
 
 /* ----------------------apartado del responsive----------------------- */

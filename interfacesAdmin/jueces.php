@@ -1,4 +1,16 @@
 <?php
+
+session_start();
+if (empty($_SESSION["Id_usuario"])) {
+    header("location: ../../login/login.php");
+}else if (!empty($_SESSION["Rol"] != 1)) {
+
+    session_start();
+    session_destroy();
+    header("location: ../login/login.php");
+};
+
+
 include "../config/conexion.php";
 if(!$conexion){
   die("<br/>Sin conexi&oacute;n.");
@@ -31,32 +43,45 @@ if($nombre!=""){
 
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asignar mesas</title>
+    <link rel="stylesheet" href="../css/jueces2.css">
+    <link rel="icon" href="../img/Logo.png">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <!-- llamada de iconos -->
-    <script src="https://kit.fontawesome.com/123c640fb2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <!-- llamada de jquery -->
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 
+    <script>
+
+    function eliminar(){
+        var respuesta=confirm("Estás a punto de eliminar un JUZGAMIENTO. ¿Deseas eliminar?");
+        return respuesta
+    };
+    
+    </script>
+
+
 </head>
 <body>
-    <div>
+
+    <div class="boton">
         <?php include "modales/aceptar.php";?>
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#aceptarS"nname="asignar">
+        <button type="button" style="background: #39A900;" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#aceptarS"nname="asignar">
             Asignar Mesas
         </button>
     </div>
     <div >
-    <?php include "controlador/asignar_mesa.php";?>
+    <?php include "controladoreJuzgamiento/asignar_mesa.php";?>
         <form method="POST" id="resultado">
             
                     
@@ -67,8 +92,8 @@ if($nombre!=""){
     </div>
     <div  class="table-responsive">
         <div class="tabla">        
-            <h3 class="text-center text-secondary">Jueces y cervezas asignadas || <?=$nombre?></h3>
-            <table class="table table-dark table-striped">
+            <h3>Jueces y cervezas asignadas || <?=$nombre?></h3>
+            <table>
                 <thead>
                     <tr>
                     <!-- <th scope="col">Id juzgamiento</th> -->
@@ -85,7 +110,7 @@ if($nombre!=""){
                 <tbody>
                     <!-- se muestran datos de la tabla y se hace la consulta -->
                     <?php
-                    include "modelo/conexion.php";
+                    include "../config/conexion.php";
                     
 
                     $sql=$conexion->query("SELECT evento_usuarios.fk_evento,evento_usuarios.fk_usuarios,general.Id,general.fk_usuario, (SELECT Nombre FROM usuarios WHERE Id_usuario=general.fk_usuario) AS Usuario, 
@@ -117,7 +142,7 @@ if($nombre!=""){
                             <!-- iconos llamados mediante scrpit de font-awesome -->
                             <td>
                                 <!-- redireccionamos a la pagina de modificacion y mandamos consigo el valor que hay en la variable -->
-                                <a onclick="return eliminar()" href="jueces.php?Id=<?=$datos->Id?>"class="btn btn-small btn-danger"><i class="bi bi-trash"></i></a>
+                                <a onclick="return eliminar()" href="jueces.php?Id=<?=$datos->Id?>"><i class="bi bi-trash"></i></a>
                                 
                             </td>
                         </tr>
@@ -127,9 +152,12 @@ if($nombre!=""){
                 </tbody>
             </table>
 
+            <div class="botonRegresar">
+                <button type="button" onclick="history.back()" >Regresar</button>
+            </div>
+
         </div>
     </div>
 
 </body>
-
 </html>

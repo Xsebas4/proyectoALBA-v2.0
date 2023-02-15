@@ -40,7 +40,7 @@ if ($datos!=null) {
     <div>
         <?php
         if ($ok==1) {
-            $sql=$conexion->query("SELECT cerveza.Nombre,estilos.Nombre AS Estilo,categorias.Nombre AS Categoria,cerveza.Pendiente
+            $sql=$conexion->query("SELECT cerveza.Codigo, cerveza.Muestras, estilos.Nombre AS Estilo,categorias.Nombre AS Categoria,cerveza.Pendiente
             FROM cerveza
             INNER JOIN estilos ON estilos.Id_estilo=cerveza.Id_cerveza
             INNER JOIN categorias ON categorias.Id_categoria=estilos.fk_categoria
@@ -53,17 +53,19 @@ if ($datos!=null) {
                     <table>
                         <thead>
                             <tr>
-                                <th>Cerveza</th>
+								<th>Codigo</th>
                                 <th>Categoria</th>
                                 <th>Estilo</th>
+								<th>N° muestras</th>
                                 <th>Estado</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td><?=$alt->Nombre?></td>
+								<td><?=$alt->Codigo?></td>
                                 <td><?=$alt->Categoria?></td>
                                 <td><?=$alt->Estilo?></td>
+								<td><?=$alt->Muestras?></td>
 
                                 <td><?php 
                                     $p=$alt->Pendiente;

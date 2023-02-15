@@ -96,9 +96,6 @@ if($nombre!=""){
             <table>
                 <thead>
                     <tr>
-                    <!-- <th scope="col">Id juzgamiento</th> -->
-                    <!-- <th scope="col">Id usuario</th> -->
-                    <th scope="col">Nombre de la cerveza</th>
                     <th scope="col">Categoría</th>
                     <th scope="col">Estilo</th>
                     <th scope="col">Código de la cerveza</th>
@@ -113,26 +110,21 @@ if($nombre!=""){
                     include "../config/conexion.php";
                     
 
-                    $sql=$conexion->query("SELECT evento_usuarios.fk_evento,evento_usuarios.fk_usuarios,general.Id,general.fk_usuario, (SELECT Nombre FROM usuarios WHERE Id_usuario=general.fk_usuario) AS Usuario, 
-                    cerveza.Nombre AS Cerveza, categorias.Nombre AS Categoria, estilos.Nombre AS Estilo, cerveza.Codigo, general.Mesa
-                    FROM evento_usuarios
-                    INNER JOIN evento ON evento_usuarios.fk_evento=evento.Id_evento
-                    INNER JOIN usuarios ON evento_usuarios.fk_usuarios=usuarios.Id_usuario
-                    INNER JOIN cerveza ON usuarios.Id_usuario=cerveza.fk_usuario
-                    INNER JOIN general ON general.fk_cerveza=cerveza.Id_cerveza
-                    INNER JOIN estilos ON cerveza.fk_usuario=estilos.Id_estilo
-                    INNER JOIN categorias ON estilos.fk_categoria=categorias.Id_categoria
-                    WHERE evento.Id_evento=$evento AND general.Juzgado=0");
+                    $sql=$conexion->query("SELECT general.Id,general.fk_usuario, (SELECT Nombre FROM usuarios WHERE Id_usuario=general.fk_usuario) AS Usuario, 
+categorias.Nombre AS Categoria, estilos.Nombre AS Estilo, cerveza.Codigo, general.Mesa
+FROM evento_usuarios
+INNER JOIN usuarios ON evento_usuarios.fk_usuarios=usuarios.Id_usuario
+INNER JOIN cerveza ON cerveza.fk_usuario=usuarios.Id_usuario
+INNER JOIN general ON general.fk_cerveza= cerveza.Id_cerveza
+INNER JOIN estilos ON estilos.Id_estilo=cerveza.fk_estilo
+INNER JOIN categorias ON categorias.Id_categoria=estilos.fk_categoria
+WHERE general.Juzgado=0");
                     /* se crea un while para listar los datos y se repite la la cantidad de filas de la tabla*/
                     while($datos=$sql->fetch_object()){ 
                     ?>
                         <tr>
                             <!-- se debe colocar el nombre de los atributos de la tabla que se mostrarán en la tabla -->
-                            <!-- <td><?=$datos->Id?></td>
-                            <td><?=$datos->fk_usuario?></td>
-                            <td><?=$datos->Nombre?></td> -->
-
-                            <td><?=$datos->Cerveza?></td>
+                            <!-- <td><?=$datos->Id?></td>-->
                             <td><?=$datos->Categoria?></td>
                             <td><?=$datos->Estilo?></td>
                             <td><?=$datos->Codigo?></td>                        

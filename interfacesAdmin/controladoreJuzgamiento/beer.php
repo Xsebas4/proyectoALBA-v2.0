@@ -6,7 +6,7 @@ if (!empty($_POST['beer']) and !empty($_POST['mesa']) and !empty($_POST['user'])
     $eve=$sql->fetch_object();
 
     /*obtenemos los datos del primer select para categorias*/
-    $sql = ("SELECT cerveza.Id_cerveza, cerveza.Nombre, categorias.Nombre AS categoria, estilos.Nombre AS estilo
+    $sql = ("SELECT cerveza.Id_cerveza, categorias.Nombre AS categoria, estilos.Nombre AS estilo
     FROM cerveza 
     INNER JOIN estilos ON cerveza.fk_estilo = estilos.Id_estilo 
     INNER JOIN categorias ON estilos.fk_categoria=categorias.Id_categoria");
@@ -48,7 +48,7 @@ if (!empty($_POST['beer']) and !empty($_POST['mesa']) and !empty($_POST['user'])
             <select id="cerveza<?=$a?>" class="form-control" name="cerveza<?=$a?>" type="number">
                 <option value="">- Seleccione cervezas -</option>
                 <?php foreach ($filas as $op): //llenar las opciones del select padre ?>
-                <option value="<?= $op['Id_cerveza']?>"><?=$op['categoria']," - ",$op['estilo']," - ",$op['Nombre']?></option>  
+                <option value="<?= $op['Id_cerveza']?>"><?=$op['categoria']," - ",$op['estilo']?></option>  
                 <?php endforeach; ?>
             </select>   
 

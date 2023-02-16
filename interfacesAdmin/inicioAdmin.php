@@ -77,32 +77,10 @@ if (empty($_SESSION["Id_usuario"])) {
                                 <form method="POST">
                                     <button type="submit" name="btnPodio" value="ok">Ver podio <?=$g->Nombre?></button>
                                 </form>
-                                <form method="POST">
-                                    
-                                    <input type="hidden" value="ok" name="terminar">
-                                    <button type="submit" name="btnTerminar" value="ok">Terminar <?=$datos->Nombre?></button>
-                                    
-                                    <?php include "controladorEvento/terminar.php"; ?>
-                                </form>
                                 <?php
                             }
                             
 
-                        }else {
-                            /* solo hay 1 */
-                            $evento=$alt->Id_evento;
-                            $sql=$conexion->query("SELECT * FROM evento WHERE Id_evento=$evento");
-                            $datos=$sql->fetch_object();
-                            include "controladorEvento/terminar.php";
-                            ?>
-
-                            <br>
-                            <form method="POST">
-                                <input type="hidden" value="ok" name="terminar">
-                                <button type="submit" name="btnTerminar" value="ok">Terminar <?=$datos->Nombre?></button>
-                            </form>
-
-                            <?php
                         }
                             
                     }else {

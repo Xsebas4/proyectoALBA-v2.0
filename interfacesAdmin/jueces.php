@@ -108,17 +108,18 @@ if($nombre!=""){
                     <!-- se muestran datos de la tabla y se hace la consulta -->
                     <?php
                     include "../config/conexion.php";
+					include "controladoreJuzgamiento/eliminarJuzgamiento.php";
                     
 
                     $sql=$conexion->query("SELECT general.Id,general.fk_usuario, (SELECT Nombre FROM usuarios WHERE Id_usuario=general.fk_usuario) AS Usuario, 
-categorias.Nombre AS Categoria, estilos.Nombre AS Estilo, cerveza.Codigo, general.Mesa
-FROM evento_usuarios
-INNER JOIN usuarios ON evento_usuarios.fk_usuarios=usuarios.Id_usuario
-INNER JOIN cerveza ON cerveza.fk_usuario=usuarios.Id_usuario
-INNER JOIN general ON general.fk_cerveza= cerveza.Id_cerveza
-INNER JOIN estilos ON estilos.Id_estilo=cerveza.fk_estilo
-INNER JOIN categorias ON categorias.Id_categoria=estilos.fk_categoria
-WHERE general.Juzgado=0");
+					categorias.Nombre AS Categoria, estilos.Nombre AS Estilo, cerveza.Codigo, general.Mesa
+					FROM evento_usuarios
+					INNER JOIN usuarios ON evento_usuarios.fk_usuarios=usuarios.Id_usuario
+					INNER JOIN cerveza ON cerveza.fk_usuario=usuarios.Id_usuario
+					INNER JOIN general ON general.fk_cerveza= cerveza.Id_cerveza
+					INNER JOIN estilos ON estilos.Id_estilo=cerveza.fk_estilo
+					INNER JOIN categorias ON categorias.Id_categoria=estilos.fk_categoria
+					WHERE general.Juzgado=0");
                     /* se crea un while para listar los datos y se repite la la cantidad de filas de la tabla*/
                     while($datos=$sql->fetch_object()){ 
                     ?>
@@ -145,7 +146,8 @@ WHERE general.Juzgado=0");
             </table>
 
             <div class="botonRegresar">
-                <button type="button" onclick="history.back()" >Regresar</button>
+			<a href="inicioAdmin.php"><button>Regresar</button></a>
+                
             </div>
 
         </div>

@@ -42,7 +42,7 @@ if (!empty($_POST['beer']) and !empty($_POST['mesa']) and !empty($_POST['user'])
         <label for="cervezas">Cervezas</label>
         <?php
         while ($a < $beer) {
-            $a++;
+            
             ?>
             
             <select id="cerveza<?=$a?>" class="form-control" name="cerveza<?=$a?>" type="number">
@@ -50,19 +50,20 @@ if (!empty($_POST['beer']) and !empty($_POST['mesa']) and !empty($_POST['user'])
                 <?php foreach ($filas as $op): //llenar las opciones del select padre ?>
                 <option value="<?= $op['Id_cerveza']?>"><?=$op['categoria']," - ",$op['estilo']?></option>  
                 <?php endforeach; ?>
-            </select>   
+            </select>
 
             <?php
-            
+            $a++;
         }
-        $a=0;
+        
         ?>
         <br>
         <label for="cata">Catadores</label>
         <?php
+		$a=0;
         while ($a < $user) {
-            $a++;
-            ?>
+            
+			?>
             
             <select id="cata<?=$a?>" class="form-control" name="cata<?=$a?>" type="number">
                 <option value="">- Seleccione catadores -</option>
@@ -71,7 +72,8 @@ if (!empty($_POST['beer']) and !empty($_POST['mesa']) and !empty($_POST['user'])
                 <?php endforeach; ?>
             </select>   
 
-            <?php        
+            <?php
+			$a++;
         }
         ?>
         <br>

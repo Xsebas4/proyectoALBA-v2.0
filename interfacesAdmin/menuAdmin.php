@@ -1,7 +1,8 @@
 <?php
+include "../fin_evento.php";
 
 include "../config/conexion.php";
-$sql = $conexion->query("SELECT cerveza.Id_cerveza AS id, cerveza.Nombre,cerveza.Codigo, usuarios.Nombre AS usuario, rango_competidor.Nombre AS rango 
+$sql = $conexion->query("SELECT cerveza.Id_cerveza AS id,cerveza.Codigo, usuarios.Nombre AS usuario, rango_competidor.Nombre AS rango 
 FROM cerveza 
 INNER JOIN usuarios ON cerveza.fk_usuario = usuarios.Id_usuario
 INNER JOIN rango_competidor ON usuarios.fk_rango_competidor = rango_competidor.Id_rango_competidor

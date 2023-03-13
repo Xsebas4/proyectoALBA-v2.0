@@ -73,7 +73,8 @@ body{
 }
 
 /* ajustes de algunos tipos de input */
-.form input[type="text"]{
+.form input[type="text"],
+.form input[type="number"]{
     border: none;
     border-bottom: 1px solid #fff;
     background: transparent;
@@ -81,6 +82,13 @@ body{
     height: 40px;
     font-size: 16px;
     color: #fff;
+    -moz-appearance: textfield;
+}
+
+/* para quitar las opciones de subir y bajar el valor del numero con las flechas */
+.form input[type="number"]::-webkit-outer-spin-button,
+.form input[type="number"]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
 }
 
 .form input[type="submit"]{
@@ -121,7 +129,7 @@ body{
     border-collapse: collapse;
 }
 
-/* color y tamaño de la letra del tabla */
+/* color y tamaño de la letra del formulario */
 .tabla h4{
     margin: 0;
     padding: 0 0 30px 0;
@@ -154,10 +162,45 @@ body{
 }
 
 
+/* style que se le da al buscador */
+.buscador{
+    margin-bottom: 30px;
+}
+
+.buscador input[type="text"]{
+    width: 240px;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 15px;
+    outline: none;
+    color: white;
+    border: 1px solid #fff;
+    background: transparent;
+    border-radius: 20px;
+}
+
+::placeholder{
+    color: #fff;
+}
+
+
 /* ----------------------apartado del responsive----------------------- */
 
+/* ----------------------apartado para pantallas no tan pequeñas como tablets para la tabla de contenido----------------------- */
+
+@media screen and (max-width: 1116px) {
+    
+    .table-responsive{
+        overflow-x: scroll;
+        margin: 80px;
+    }
+        
+}
+
+
+
 @media screen and (max-width: 760px) {
- 
+    
     /* card del formulario */
     .form{
         margin-top: 30px;
@@ -171,7 +214,7 @@ body{
     
     .table-responsive{
         overflow-x: scroll;
-		margin: 20px;
+        margin: 20px;
     }
     
     

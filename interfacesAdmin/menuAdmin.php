@@ -18,6 +18,13 @@ $cuantas = mysqli_num_rows($sql);
 
 <body id="body">
 
+<div id="fondo"></div>
+
+	<?php 
+        include "../editarPerfil/editarPerfil.php";
+    ?>
+
+
     <!-- icono del menu desplegable -->
     <header>
 
@@ -42,26 +49,16 @@ $cuantas = mysqli_num_rows($sql);
             <div class="icono_nombre_perfil">
                 
 				
-            <?php 
+             <?php 
 
             if ($_SESSION["Foto"] != "") {
-				?>
-				<a href="../editarPerfil/editarPerfil.php?Id_usuario=<?= $_SESSION["Id_usuario"] ?>">
-				<?php
-				
-                echo '<img class="fotoPerfil" src="data:image/jpg;base64,'. base64_encode($_SESSION["Foto"]).'" alt="Foto">';
-                ?>
-				</a>
-				<?php
+
+                echo '<label for="btn-modal"><div class="fotoP"><img src="data:image/jpg;base64,'. base64_encode($_SESSION["Foto"]).'" alt="Foto"></div></label>';
 				
             } else {
-				?>
-				<a href="../editarPerfil/editarPerfil.php?Id_usuario=<?= $_SESSION["Id_usuario"] ?>">
-				<?php
-                echo '<i class="bi bi-person-circle"></i>';
-                ?>
-				</a>
-				<?php
+
+                echo '<label for="btn-modal"><div class="iconoPerfil"><i class="bi bi-person-circle"></i></div></label>';
+
             }
             
             ?>
@@ -70,11 +67,11 @@ $cuantas = mysqli_num_rows($sql);
                 <h4><?php echo$_SESSION["Nombre"]." ".$_SESSION["Apellido"]; ?></h4>
 
                 <!-- icono del lapiz editar -->
-                <a href="../editarPerfil/editarPerfil.php?Id_usuario=<?= $_SESSION["Id_usuario"] ?>">
+                <!-- <a href="../editarPerfil/editarPerfil.php?Id_usuario=<?= $_SESSION["Id_usuario"] ?>">
                     <div class="lapiz">
                         <i class="bi bi-pencil-fill"></i>
                     </div>
-                </a>
+                </a> -->
                 
             </div>
 
@@ -82,7 +79,7 @@ $cuantas = mysqli_num_rows($sql);
         <!-- opciones del menu -->
         <div class="options_menu">
 
-            <a href="inicioAdmin.php">
+            <a href="index.php">
                 <div class="option">
                 <i class="bi bi-house" title="Inicio"></i> 
                 <h4>Inicio</h4>
@@ -142,17 +139,10 @@ $cuantas = mysqli_num_rows($sql);
                 </div>
             </a>
 
-            <a href="statsgen/index.php">
+            <a href="../statsgen/index.php">
                 <div class="option">
                 <i class="bi bi-clipboard2-check" title="Resultados del evento"></i> 
-                <h4>Resultados del evento</h4>
-                </div>
-            </a>
-
-            <a href="resultadosAdmin/">
-                <div class="option">
-                <i class="bi bi-search" title="Resultados anteriores"></i>
-                <h4>Resultados anteriores</h4>
+                <h4>Resultados</h4>
                 </div>
             </a>
 

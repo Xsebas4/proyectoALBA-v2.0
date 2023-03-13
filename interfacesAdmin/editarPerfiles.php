@@ -282,16 +282,8 @@ if (empty($_SESSION["Id_usuario"])) {
 
     </div>
 	
-	<!-- javascript para la funcionaliodad del ojo de password -->
-    <script src="../js/mostrarOcultarContrasena.js"></script>
-	
-	
-	<!-- javascript para que al ingresar los datos estos comiecen con letra mayuscula -->
-    <script src="../js/mayuscula2.js"></script>
-
-	
-	<!-- javascript para poner lmite de caracteres en algunos datos -->
-    <script src="../js/limite.js"></script>
+    <!-- js que tiene todo lo del ocultar/mostrar contraseña, limite de caracteres y mayusculas al princio de una palabra -->
+    <script src="../js/perfilesAdmin.js"></script>
 
 </body>
 </html>

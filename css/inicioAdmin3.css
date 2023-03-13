@@ -20,7 +20,7 @@ body{
 .container{
     width: 400px;
     background: rgba(119, 117, 86, 0.445);
-    top: 40%;
+    top: 50%;
     left: 50%;
     position: relative;
     transform: translate(-50%, -50%);
@@ -29,20 +29,18 @@ body{
     padding: 60px 30px;
 }
 
-.container .header{
-    margin: 0;
-    padding: 0 0 20px 0;
+.container .puestos{
     text-align: center;
     color: #fff;
-    font-size: 20px;
+    font-size: 15px;
 }
 
-.container .puestos{
-    margin: 0;
-    padding: 0 0 20px 0;
-    text-align: center;
-    color: #fff;
-    font-size: 20px;
+.container .puestos h1{
+    margin-bottom: -15px;
+}
+
+.container .puestos h3{
+  margin-top: 15px;
 }
 
 /* estilo que se le da al boton de click aqui de ultimo evento */

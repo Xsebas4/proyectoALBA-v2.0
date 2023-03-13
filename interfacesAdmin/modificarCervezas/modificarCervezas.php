@@ -15,7 +15,10 @@ $filas = mysqli_fetch_all($query, MYSQLI_ASSOC);
 include "../../config/conexion.php";
 
 /* obtenemos los datos de usuario */
-$sql_2 = "SELECT * FROM usuarios";
+$sql_2 = "SELECT Id_usuario, usuarios.Nombre AS Usuario, rango_competidor.Nombre AS Rango
+FROM usuarios 
+INNER JOIN rango_competidor ON usuarios.fk_rango_competidor = rango_competidor.Id_rango_competidor
+WHERE usuarios.Rol!=1";
 $query_2 = mysqli_query($conexion, $sql_2);
 $filas_2 = mysqli_fetch_all($query_2, MYSQLI_ASSOC); 
 
@@ -80,12 +83,14 @@ $filas_2 = mysqli_fetch_all($query_2, MYSQLI_ASSOC);
                     $Id_cerveza=$_GET["Id_cerveza"];
 
                     $sql=$conexion->query(
-                    "SELECT cerveza.Id_cerveza, cerveza.Nombre, cerveza.Codigo, usuarios.Nombre AS Usuario,  usuarios.Id_usuario, estilos.Nombre AS Estilo, estilos.Id_estilo, categorias.Nombre AS Categoria
+                    "SELECT cerveza.Id_cerveza, cerveza.Adiciones, cerveza.Codigo, usuarios.Nombre AS Usuario, usuarios.Id_usuario, estilos.Nombre AS Estilo, estilos.Id_estilo, categorias.Nombre AS Categoria, rango_competidor.Nombre AS Rango
+                    
                     FROM cerveza 
                     INNER JOIN usuarios ON cerveza.fk_usuario=usuarios.Id_usuario
+                    INNER JOIN rango_competidor ON usuarios.fk_rango_competidor = rango_competidor.Id_rango_competidor
                     INNER JOIN estilos ON estilos.Id_estilo=cerveza.fk_estilo
                     INNER JOIN categorias ON categorias.Id_categoria=estilos.fk_categoria AND estilos.Id_estilo = cerveza.fk_estilo
-                    WHERE Id_cerveza=$Id_cerveza");
+                    WHERE Id_cerveza=$Id_cerveza ");
                 
                     /* recorre los datos y los va mostrando */
                     while ($datos=$sql->fetch_object()) {?>
@@ -99,8 +104,8 @@ $filas_2 = mysqli_fetch_all($query_2, MYSQLI_ASSOC);
                             <!-- ------------------------------------------------------------------------------------------------------- -->
                         </div>
                         <div class="mb-2 col-sm-10">
-                            <label for="nombre">Nombre de la cerveza</label>
-                            <input type="text" class="form-control" name="nombre" value="<?= $datos->Nombre?>">
+                            <label for="nombre">Adiciones</label>
+                            <input type="text" class="form-control" name="nombre" value="<?= $datos->Adiciones?>">
                         </div>
                         <div class="mb-2 col-sm-10">      
                             <label for="codigo">Código de la cerveza</label>                  
@@ -109,9 +114,9 @@ $filas_2 = mysqli_fetch_all($query_2, MYSQLI_ASSOC);
                         <div class="mb-2 col-sm-10">
                             <label for="usuario">Nombre del usuario</label>
                             <select id="usuario" name="usuario" type="number" class="form-control">
-                                <option value="<?= $datos->Id_usuario?>"><?= $datos->Usuario?></option>
+                                <option value="<?= $datos->Id_usuario?>"><?= $datos->Usuario.' - '.$datos->Rango?></option>
                                 <?php foreach ($filas_2 as $op_2): //llenar las opciones del select usuario ?>
-                                <option value="<?= $op_2['Id_usuario'] ?>"><?= $op_2['Nombre'] ?></option>  
+                                <option value="<?= $op_2['Id_usuario'] ?>"><?= $op_2['Usuario'].' - '.$op_2['Rango'] ?></option>  
                                 <?php endforeach; ?>
                             </select>
                         </div>

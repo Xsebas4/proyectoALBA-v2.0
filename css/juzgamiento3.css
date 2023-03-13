@@ -28,17 +28,18 @@ body{
 /* titulo */
 .titulo{
     text-align: center;
-    margin-top: 50px;
-    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.titulo h4{
+    font-size: 20px;
 }
 
 /* el contenedor padre */
-/* .container{
-    margin: auto;
-    width: 600px;
-    border-radius: 20px;
-    text-align: center;
-} */
+.container{
+    display: flex;
+    justify-content: space-between;
+}
 
 /* contenedor donde se encuentran los card de cada formulario */
 .container .grande {
@@ -55,23 +56,10 @@ body{
     font-weight: normal;
 }
 
-/* el input de los datos de la cerveza a juzgar */
-.grande .textos input[type="text"]{
-    border: none;
-    background: transparent;
-    border-bottom: 1px solid #fff;
-    outline: none;
-    text-align: left;
-    font-size: 16px;
-    margin: 0;
-    text-align: left;
-    margin-bottom: 25px;
-}
-
 /* para poder cada cards de fomrulario que sea display flex */
 .grande .form{
     display: flex;
-    width: 500%;
+    width: 600%;
     transition: 0.3s ease-in-out;
 }
 
@@ -79,6 +67,7 @@ body{
 .grande span{
     display: flex;
     align-items: center;
+    color: #fffdee;
 }
 
 /* ajustes de los input */
@@ -138,7 +127,7 @@ body{
     cursor: pointer;
 }
 
-/* ajustes del boton registrar */
+/* ajustes del botones del formulario */
 .grande button{
     border: none;
     outline: none;
@@ -151,10 +140,24 @@ body{
     margin-top: 20px;
 }
 
+/* opacidad que se le da a los botones del formulario al estar deshabilitados */
+.grande button[disabled] {
+    opacity: 0.5; /* ajusta el valor según lo desees */
+}
+
+
 /* ajustes que se le a cada cards del formulario */
+.grande .fallas{
+    margin: 25px 0;
+    padding: 60px;
+    background: rgba(119, 117, 86, 0.712);
+    border-radius: 30px;
+    width: 25%;
+}
+
 .grande .aroma{
     margin: 25px 0;
-    padding: 90px 60px 0 60px;
+    padding: 200px 60px 0 60px;
     background: rgba(119, 117, 86, 0.712);
     border-radius: 30px;
     width: 25%;
@@ -215,15 +218,21 @@ body{
     margin: 20px 0;
 }
 
-.botones #b1{
-    margin-top: 6%;
+.botones{
+	display: flex;
+	margin-top: 60px;
+}
+
+.botones .ba,
+.botones .bs {
+	margin: 0 20px;
+}
+
+.boton #b1{
+	margin-top: 6%;
     margin-bottom: 10%;
 }
 
-.grande #b2{
-    margin-top: 15%;
-    
-}
 
 /* esto es el apartado html dentro de php pero que se llama la clase para darle el css */
 .noCervezas{
@@ -236,10 +245,251 @@ body{
 }
 
 
+/* boton regresar */
+.regresar button{
+    width: 130px;
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #39A900;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    transition: all 300ms;
+    cursor: pointer;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.regresar button:hover{
+    transform: scale(1.10);
+}
+
+
+/* para el contenido de informacion de la cerveza */
+.textos{
+    width: 300px;
+    background: rgba(119, 117, 86, 0.712);
+    text-align: center;
+    margin: auto;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+/* titulos de codigo y categoria */
+.textos h2{
+    font-size: 18px;
+    color: #39A900;
+    margin-bottom: 10px;
+    text-align: left;
+    font-weight: bold;
+}
+
+/* ajustes de los input */
+.textos input{
+    width: 100%;
+    margin: 10px;
+    color: #fff;
+}
+
+.textos input[type="text"]{
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    text-align: left;
+    font-size: 16px;
+    margin: 0;
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+/* botones de informacion */
+.textos button{
+    width: max-content;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: #39A900;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    transition: all 300ms;
+    cursor: pointer;
+	margin-top: 20px;
+    padding: 0 15px;
+}
+
+.textos button:hover{
+    transform: scale(1.10);
+}
+
+
+/* para el primer boton de "siguiente" */
+.boton{
+    display: flex;
+    justify-content: center;
+}
+
+.boton #b1{
+    width: 200px;
+    margin-top: 80px;
+}
+
+.grande label, p{
+    color: #fff;
+    margin: 10px;
+    margin-bottom: 0;
+}
+
+
+/* fallas */
+.fallasC{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fallas h4{
+    margin-bottom: 20px;
+}
+
+.fallas td{
+    padding: 5px 20px;
+    color: #fff;
+}
+
+.fallasC select{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    color: #fff;
+}
+
+/* color del fondo de las options */
+.fallasC option{
+    background: dimgrey;
+}
+
+
+/* la selecion predeterminada pero deshabilitada */
+.fallasC select[disabled] {
+    color: #fff;
+}
+
+
+
+/* apartado de buscar la ceverza para validar y modal */
+.buscarC{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.buscarC button{
+    width: max-content;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: #39A900;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    transition: all 300ms;
+    cursor: pointer;
+	margin-top: 20px;
+    padding: 0 15px;
+}
+
+.buscarC button:hover{
+    transform: scale(1.10);
+}
+
+.botonesModal button{
+    width: 130px;
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #39A900;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    margin: 10px 50px;
+    transition: all 300ms;
+    cursor: pointer;
+}
+
+.botonesModal button:hover{
+    transform: scale(1.10);
+}
+
+.title{
+    text-align: center;
+}
+
+.title label{
+    color: #fff;
+}
+
+.title input[type="text"]{
+    border: 1px solid #fff;
+    border-radius: 20px;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    font-size: 16px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+::placeholder{
+    color: #fff;
+}
+
+/* si no se eucnutra resultados */
+.noResultados{
+    text-align: center;
+    margin-top: 120px;
+}
+
+.noResultados h1{
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.noResultados button{
+    width: max-content;
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #39A900;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    padding: 0 20px;
+    transition: all 300ms;
+    cursor: pointer;
+}
+
+.noResultados button:hover{
+    transform: scale(1.10);
+}
+
+
 /* -------------------este es el apartado de responsive---------------- */
 
 @media screen and (max-width: 760px){
 
+
+    .container{
+        display: block;
+    }
 
     /* contenedor donde se encuentran los card de cada formulario */
     .container .grande {
@@ -257,6 +507,39 @@ body{
         margin-top: 80%;
         font-size: 20px;
     }
+	
+	
+	.regresar button{
+        width: 50px;
+    }
+
+    .botones{
+        display: block;
+    }
+
+    .botones .ba{
+        margin-bottom: 20px;
+    }
+
+
+    /* si no se eucnutra resultados */
+    .noResultados {
+        margin-top: 40%;
+    }
+
+    .noResultados h1 {
+        font-size: 32px;
+    }
+
+    .noResultados button {
+        margin-top: 20px;
+    }
     
+    .botonesModal button{
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
 }
+
 

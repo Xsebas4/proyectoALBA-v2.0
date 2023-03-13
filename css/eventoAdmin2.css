@@ -56,7 +56,8 @@ body{
 
 /* ajustes de algunos tipos de input */
 .form input[type="text"],
-.form input[type="date"]{
+.form input[type="date"],
+.form input[type="number"]{
     border: none;
     border-bottom: 1px solid #fff;
     background: transparent;
@@ -64,6 +65,13 @@ body{
     height: 40px;
     font-size: 16px;
     color: #fff;
+}
+
+
+/* para quitar las opciones de subir y bajar el valor del numero con las flechas */
+.form input[type="number"]::-webkit-outer-spin-button,
+.form input[type="number"]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
 }
 
 /* es para invertir el color del icono del calendario en la input type date */
@@ -142,9 +150,22 @@ body{
 }
 
 
-/* ----------------------apartado del responsive----------------------- */
+/* ----------------------apartado del responsive y para pantallas no tan pequeñas como tablets----------------------- */
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 1116px) {
+
+
+    /* --------------------------listado de eventos--------------------------- */
+    
+    .table-responsive{
+        overflow-x: scroll;
+        margin: 80px;
+    }
+        
+}
+
+
+@media screen and (max-width: 760px) and (max-width: 761px) {
  
 
 /* card del formulario */
@@ -153,12 +174,11 @@ body{
     max-width: 90%;
 }
 
+
 /* --------------------------listado de eventos--------------------------- */
 
 .table-responsive{
-    overflow-x: scroll;
 	margin: 20px;
 }
-
 
 }

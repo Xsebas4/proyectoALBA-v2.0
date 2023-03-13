@@ -23,30 +23,19 @@ if (empty($_SESSION["Id_usuario"])) {
   <!-- jquery  -->
   <script src="https://code.jquery.com/jquery-3.6.2.js" integrity="sha256-pkn2CUZmheSeyssYw3vMp1+xyub4m+e+QK4sQskvuo4=" crossorigin="anonymous"></script>
   <!-- CSS only -->
+  
+      <!-- llamado de los iconos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
 
   <link rel="stylesheet" href="../../css/notificaciones4.css">
   <link rel="icon" href="../../img/Logo.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-
-  <!--   <style> 
-        table tr th{
-            background:rgba(0, 0, 0, .6);
-            color: black;
-        }
-        tbody tr{
-          font-size: 12px !important;
-
-        }
-        h3{
-            color:crimson; 
-            margin-top: 100px;
-        }
-        a:hover{
-            cursor: pointer;
-            color: #333 !important;
-        }
-      </style> -->
 </head>
+
+<div id="icon" class="regresar">
+    
+</div>
 
 <div class="container">
 
@@ -96,7 +85,7 @@ if (empty($_SESSION["Id_usuario"])) {
                 <tr>
                   <td><?php echo $dataCliente['Codigo']; ?></td>
                   <td><?php echo $dataCliente['categoria']; ?></td>
-				  <td><?php echo $dataCliente['estilos']; ?></td>
+				          <td><?php echo $dataCliente['estilos']; ?></td>
                   <td><?php echo $dataCliente['usuario']; ?></td>
                   <td><?php echo $dataCliente['rango']; ?></td>
                   
@@ -120,18 +109,16 @@ if (empty($_SESSION["Id_usuario"])) {
 
 
               <?php } ?>
+              </tbody>
       
           </table>
       </div>
   </div>
-
-    <div class="boton">
-	<a href="../inicioAdmin.php"><button type="button" style="background: #39A900; border:yellow" class="btn btn-primary">Regresar</button></a> 
-    </div>
-
-                
+              
 
 </div>
+
+
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.6.2.js" integrity="sha256-pkn2CUZmheSeyssYw3vMp1+xyub4m+e+QK4sQskvuo4=" crossorigin="anonymous"></script>
@@ -178,5 +165,11 @@ if (empty($_SESSION["Id_usuario"])) {
 });
 </script>
 
+
+	    <!-- para que se pueda dar el estilo al boton de regresar -->
+    <script src="../../js/botonRegresar.js"></script>
+	
+	<script src="../../js/mensajePestana.js"></script>
+	
 </body>
 </html>

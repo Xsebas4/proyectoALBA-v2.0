@@ -22,6 +22,13 @@ body{
     background-attachment: fixed;
 }
 
+/* h1 para otra interfaz que comparte este css */
+.container h2{
+    color: #fff;
+    text-align: center;
+    margin: 30px 0;
+}
+
 /* es el primer contenedor donde se encuentra las estadisticas */
 .container{
     margin-top: 20px;
@@ -31,61 +38,62 @@ body{
     border-radius: 20px;
 }
 
-/* es la linea que separa la grafica de estadisitcas con los comentarios */
+/* es la linea que separa la grafica de estadisitcas con los comentarios, medallas, fallas, etc */
 hr{
     color: #fff;
 }
 
-/* div en el que esta los comentarios */
-.text{
-    display: flex;
-    justify-content: center;
-}
-
-/* primer div que esta dentro del div padre comentarios */
-.p1 p{
-    text-align: left;
-    color: white;
-}
-
-/* segundo div que esta dentro del div padre comentarios */
-.p2 p{
-    text-align: right;
-    color: white;
-}
-
-.p2{
-    margin-left: 60%;
-}
-
-/* este es para los parramos de las estadisiticas generales ya que el css se comparte con este */
-p{
-    color: white;
-    text-align: center;
-}
-
 /* Es el segundo contenedor donde se encuentra la nota total */
-.container2{
-    margin: auto;
-    margin-top: 20px;
-    width: 500px;
-    padding: 20px;
-    background: rgba(119, 117, 86, 0.445);
-    border-radius: 20px;
-}
-
-/* para el total del puntaje */
-.total{
-    text-align: center;
+.container2 .total{
+    color: #fff;
+    font-weight: bold;
     font-size: 20px;
-    color: white;
+    text-align: center;
 }
 
-/* para la posicion del div donde se encuatras el boton de atras */
-.boton{
-    display: flex;
-    justify-content: center;
+.container2 .total span{
+    font-size: 40px;
 }
+
+/* medallas, comentarios, fallas, etc */
+.medalla{
+    color: #fff;
+    font-weight: bold;
+    padding: 8px 50px;
+}
+
+.fallas p{
+    padding: 8px 50px 15px 50px;
+    margin: 0;
+}
+
+.fallas p{
+    color: #fff;
+}
+
+.fallas span{
+    font-weight: bold;
+}
+
+.comentario p{
+    color: #fff;
+    margin: 0;
+    padding: 8px 50px;
+}
+
+.comentario span{
+    padding: 8px 50px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.p2 p{
+    color: #fff;
+    font-weight: bold;
+    margin: 0;
+    padding: 8px 50px;
+}
+
 
 /* ajustes que se le dan al boton de atras */
 .boton input{
@@ -108,6 +116,27 @@ p{
 }
 
 
+/* boton regresar */
+.regresar button{
+    width: 130px;
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #39A900;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    transition: all 300ms;
+    cursor: pointer;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.regresar button:hover{
+    transform: scale(1.10);
+}
+
+
 
 /* ----------------------apartado del responsive----------------------- */
 
@@ -122,5 +151,10 @@ p{
     .p2{
         margin-left: 40%;
     }
+
+    .regresar button{
+        width: 50px;
+    }
+	
     
 }

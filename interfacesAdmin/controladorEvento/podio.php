@@ -1,54 +1,52 @@
-<link rel="stylesheet" href="http://localhost/proyectoalba/css/inicioAdmin2.css">
-<link rel="stylesheet" href="../../../css/inicioAdmin2.css">
-
 <?php
-include "../../config/conexion.php";
+include "../config/conexion.php";
 
-    $sql=$conexion->query("SELECT * FROM evento ORDER BY Id_evento DESC LIMIT 1,1");
-    $alt=$sql->fetch_object();
-    $evento=$alt->Id_evento;
+if (!empty($_POST['btnPodio'])) {
+    $sql=$conexion->query("SELECT Id_evento FROM evento ORDER BY Id_evento DESC LIMIT 0,1");
+        $data=$sql->fetch_object();
+        $evento=$data->Id_evento;
+        
 
-        $sql=mysqli_query($conexion,"SELECT general.Id, general.fk_cerveza FROM general 
-        INNER JOIN cerveza ON cerveza.Id_cerveza=general.fk_cerveza
-        INNER JOIN usuarios ON usuarios.Id_usuario=cerveza.fk_usuario
-        INNER JOIN evento_usuarios ON usuarios.Id_usuario=evento_usuarios.fk_usuarios
-        INNER JOIN evento ON evento_usuarios.fk_evento=evento.Id_evento
-        WHERE evento.Id_evento=$evento
-        GROUP BY general.fk_cerveza
-        ORDER BY general.fk_cerveza ASC
-        LIMIT 0,3");
+        $sql=mysqli_query($conexion,"SELECT Id, fk_cerveza FROM general 
+        WHERE fk_evento=$evento and Juzgado=1
+        GROUP BY fk_cerveza");
 
         $cuantas = mysqli_num_rows($sql);
 
-        if ($cuantas==3) {
+        if ($cuantas>=3) {
+
+            $A=0;
+            $B=0;
+            $C=0;
 
             $puesto_1=0;
             $puesto_2=0;
             $puesto_3=0;
-
             
             while ($alt=$sql->fetch_object()) {
 
                 $i=0;
                 $resultado=0;
                 
-                $alt->fk_cerveza;
+                $cerv=$alt->fk_cerveza;
 
-                $query=$conexion->query("SELECT general.Id,general.Aroma,general.Apariencia,general.Sabor,general.Sensacion,general.Nota,general.fk_cerveza 
+                $query=$conexion->query("SELECT Id, Aroma, Apariencia, Sabor, Sensacion, Nota, fk_cerveza, Ejemplo, Sin_fallas, Maravilloso 
                 FROM general 
-                INNER JOIN cerveza ON cerveza.Id_cerveza=general.fk_cerveza
-                INNER JOIN usuarios ON usuarios.Id_usuario=cerveza.fk_usuario
-                INNER JOIN evento_usuarios ON usuarios.Id_usuario=evento_usuarios.fk_usuarios
-                INNER JOIN evento ON evento_usuarios.fk_evento=evento.Id_evento
-                WHERE general.fk_cerveza=$cerv AND evento.Id_evento=$evento");
+                WHERE fk_cerveza=$cerv AND fk_evento=$evento AND Juzgado=1");
                 
 
                 
 
                     while($datos=$query->fetch_object()){
 
-                        $i=$i+1;
+                        $i++;
                         $total=0;
+
+                        $ejemplo=$datos->Ejemplo;
+
+                        $sin_fallas=$datos->Sin_fallas;
+
+                        $maravilloso=$datos->Maravilloso;
         
                         $aroma=$datos->Aroma;
         
@@ -60,71 +58,106 @@ include "../../config/conexion.php";
                         
                         $nota=$datos->Nota;
         
-                        $suma=$aroma+$apariencia+$sabor+$sensacion+$nota;
+                        $suma=$aroma+$apariencia+$sabor+$sensacion+$nota+$ejemplo+$sin_fallas+$maravilloso;
         
-        
-                        $suma=$suma/5;
+                        $suma=$suma/8;
                         $total=$total+$suma;
                         $resultado=$resultado+$total;
-                        
                         
                     }
         
                     $promedio=$resultado/$i;
                     
+                    /* primera vez que se hace la comparación */
+                    if($puesto_1==0){
+                        
+                        $puesto_1=$promedio;
+                        $A=$cerv;
+                        $next=true;
+                       
+
+                    }else {
+
+                        if ($puesto_1!=0 && $puesto_2!=0) {
+
+                            if ($promedio>=$puesto_1) {
+                                $phantom=$puesto_1;//variable temporal para tomar el mayor valor
+                                $Z=$A; /* z es una variable temporal */
+                                $A=$cerv;
+                                $puesto_1=$promedio;
+                                $phantom2=$puesto_2;//variable que toma el valor del segundo para darselo al tercero
+                                $puesto_2=$phantom;//la variable toma el menor valor
+                                $Y=$B;
+                                $B=$Z;
+                                $puesto_3=$phantom2;
+                                $C=$Y;                                
+                                
+                            }elseif ($promedio<$puesto_1 && $promedio>$puesto_3) {
+                                $phantom=$puesto_2;
+                                $Z=$B;
+                                $B=$cerv;
+                                $puesto_2=$promedio;
+                                $puesto_3=$phantom;
+                                $C=$Z;
+                                
+                            }else {
+                                $puesto_3=$promedio;
+                                $C=$cerv;
+                                
+                            }
+                            
+                        }else {
+                            /* el nuevo promedio es mayor al anterior? entonces mover los valores hacia abajo */
+                            if($promedio>=$puesto_1) {
         
-                    if($puesto_1==0 && $puesto_2==0 && $puesto_3==0){
-                        if ($promedio>$puesto_1 && $promedio>$puesto_2 && $promedio>$puesto_3 ) {
-                            $puesto_1=$promedio;
-                            $A=$cerv;
-                            $next=true;
+                                $phantom=$puesto_1;//variable temporal para tomar el mayor valor
+                                $Z=$A; /* z es una variable temporal */
+                                $A=$cerv;
+                                $puesto_1=$promedio;
+                                $puesto_2=$phantom;//la variable toma el menor valor
+                                $B=$Z;                                
+                            
+                            }elseif ($promedio<$puesto_1 && $promedio>$puesto_3) {
+                                $phantom=$puesto_2;
+                                $Z=$B;
+                                $B=$cerv;
+                                $puesto_2=$promedio;
+                                $puesto_3=$phantom;
+                                $C=$Z;    
+                                                       
+                            }else{
+                                $puesto_3=$promedio;
+                                $C=$cerv;
+                               
+                            }
                         }
-                    }elseif ($promedio==$puesto_1) {
-                        $puesto_1=$promedio;
-                        $A=$cerv;
                         
+                        if ($next!=true) {
+                            echo "Error en el posicionamiento de los ganadores";
+                        }
                     }
-                    elseif($promedio>$puesto_1) {
-                        $phantom=$puesto_1;//variable temporal para tomar el mayor valor
-                        $Z=$A;
-                        $A=$cerv;
-                        $puesto_1=$promedio;
-                        $puesto_2=$phantom;//la variable toma el menor valor
-                        $B=$Z;
-                        
-                        
-                    }elseif ($promedio==$puesto_2) {
-                        $puesto_2=$promedio;
-                        $B=$cerv;
-        
-                    }elseif ($promedio<$puesto_2) {
-                        $puesto_3=$promedio;
-                        $C=$cerv;
-                    }    
-                    if ($next!=true) {
-                        echo "Error en el posicionamiento de los ganadores";
-                    }
+                    
                 
                 
             }
 
-            $sql=$conexion->query("UPDATE evento SET Primer_puesto=$A, Segundo_puesto=$B, Tercer_puesto=$C WHERE Id_evento=$evento");
+            $sql=$conexion->query("UPDATE evento SET Primer_puesto=$A, Segundo_puesto=$B, Tercer_puesto=$C WHERE Id_evento='$evento'");
             
-            $sql=$conexion->query("SELECT cerveza.Nombre, categorias.Nombre AS Categoria
+            $sql=$conexion->query("SELECT categorias.Nombre AS Categoria, estilos.Nombre AS Estilo
             FROM cerveza 
             INNER JOIN estilos ON estilos.Id_estilo = cerveza.fk_estilo
             INNER JOIN categorias ON estilos.fk_categoria=categorias.Id_categoria
             WHERE Id_cerveza=$A");
             $alfa=$sql->fetch_object();
 
-            $sql=$conexion->query("SELECT cerveza.Nombre, categorias.Nombre AS Categoria
+            $sql=$conexion->query("SELECT categorias.Nombre AS Categoria, estilos.Nombre AS Estilo
             FROM cerveza 
             INNER JOIN estilos ON estilos.Id_estilo = cerveza.fk_estilo
             INNER JOIN categorias ON estilos.fk_categoria=categorias.Id_categoria
             WHERE Id_cerveza=$B");
             $bravo=$sql->fetch_object();
 
-            $sql=$conexion->query("SELECT cerveza.Nombre, categorias.Nombre AS Categoria
+            $sql=$conexion->query("SELECT categorias.Nombre AS Categoria, estilos.Nombre AS Estilo
             FROM cerveza 
             INNER JOIN estilos ON estilos.Id_estilo = cerveza.fk_estilo
             INNER JOIN categorias ON estilos.fk_categoria=categorias.Id_categoria
@@ -134,38 +167,26 @@ include "../../config/conexion.php";
 
             <div class="puestos">
 
-            <br> Puestos: 
-            <br> Primer puesto: <?=$alfa->Nombre?>, <?=$alfa->Categoria?>.
-            <br> Segundo Puesto: <?=$bravo->Nombre?>, <?=$bravo->Categoria?>.
-            <br> Tercer puesto: <?=$charlie->Nombre?>, <?=$charlie->Categoria?>.
+            <br> <h1>Puestos: </h1>
+            <br> <h3>Primer puesto:</h3> <?=$alfa->Categoria." - ".$alfa->Estilo?>.
+            <br> <h3>Segundo Puesto:</h3> <?=$bravo->Categoria." - ".$alfa->Estilo?>.
+            <br> <h3>Tercer Puesto:</h3> <?=$charlie->Categoria." - ".$alfa->Estilo?>.
             <br>
 
             </div>
             
-                <a href="inicioAdmin.php"><button>Regresar</button></a>
+                <a href="index.php"><button>Cerrar</button></a>
             
 
             <?php
         }else {
             echo "<br>
+            <h2 style='color:white ;text-align:center;'>No hay registros suficientes $cuantas </h2>
             <br>
-            <br>
-            <div class='container'>
-            <h1 style='color:white; text-align:center;'>Podio</h1>
-            
-            <h2 style='color:white ;text-align:center;'>No hay registros suficientes</h2>
-            <br>
-            <a href='../inicioAdmin.php'><button>Regresar</button></a>
-            </div>";
-            
-                
-           
-            
+            <a href='index.php'><button>Cerrar</button></a>
+            ";
         }
-
-        
-   
-
+}
     
 
 ?>

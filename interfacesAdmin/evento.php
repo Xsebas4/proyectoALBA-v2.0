@@ -56,7 +56,7 @@ if (empty($_SESSION["Id_usuario"])) {
 
                 <div class="nombre_evento">
                     <label>Nombre del evento</label>
-                    <input type="text" name="nombreEvento"  onkeydown="if (event.keyCode === 13) { event.preventDefault(); document.getElementById('fecha').focus(); }">
+                    <input class="mayuscula" type="text" name="nombreEvento"  onkeydown="if (event.keyCode === 13) { event.preventDefault(); document.getElementById('fecha').focus(); }">
                 </div>
 
                 <div class="fecha">
@@ -71,7 +71,7 @@ if (empty($_SESSION["Id_usuario"])) {
 				
                 <div class="lugar">
                     <label>Lugar</label>
-                    <input type="text" id="lugar" name="lugar" onkeydown="if (event.keyCode === 13) { event.preventDefault(); document.getElementById('lugar').focus(); }>
+                    <input class="mayuscula" type="text" id="lugar" name="lugar" onkeydown="if (event.keyCode === 13) { event.preventDefault(); document.getElementById('lugar').focus(); }">
                 </div>
 				
 				<div class="nombre_evento">
@@ -147,11 +147,15 @@ if (empty($_SESSION["Id_usuario"])) {
                     </table>
 
                 </div>
-
+                <br>
             </div>
         </div>
 
     </div>
+	
+	
+	<!-- javascript para que al ingresar los datos estos comiecen con letra mayuscula -->
+    <script src="../js/mayuscula2.js"></script>
 
 </body>
 </html>

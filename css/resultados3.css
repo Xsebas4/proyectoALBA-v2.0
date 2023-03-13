@@ -21,7 +21,11 @@ body{
     background-attachment: fixed;
 }
 
-/* --------------------------listado del juzgamiento--------------------------- */
+
+/* titulo de resultados */
+.resultados{
+    margin-bottom: 30px;
+}
 
 /* card del listado de los eventos */
 .tabla{
@@ -59,8 +63,11 @@ body{
 }
 
 .tabla td{
-    margin: 200px;
-    padding: 15px;
+    padding: 12px 15px;
+}
+
+.tabla th{
+    padding: 0 15px;
 }
 
 /* ajustes del tamaño y color de los iconos que llevan en la tabla */
@@ -93,6 +100,37 @@ body{
 }
 
 
+/* boton regresar */
+.regresar button{
+    width: 130px;
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #39A900;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    transition: all 300ms;
+    cursor: pointer;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.regresar button:hover{
+    transform: scale(1.10);
+}
+
+/* boton de estadisticas */
+.estadisticas button{
+    width: 120px;
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #39A900;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 10px;
+}
 
 
 /*-------------- apartado del responsive ------------------*/
@@ -102,6 +140,10 @@ body{
     .res{
         overflow-x: scroll;
 		margin: 20px;
+    }
+	
+	.regresar button{
+        width: 50px;
     }
     
     

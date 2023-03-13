@@ -16,7 +16,7 @@
                         <option value="">- Seleccione mesa -</option>
                         <?php
                             $a=0;
-                            while ($a<($count->Mesas)) {
+                            while ($a<($count)) {
                                 ?>
 
                                 <option value="<?=$a+1?>"><?=$a+1?></option>
@@ -40,10 +40,11 @@
                   </div>
                 </div>
 
-                <button type="submit" style="display:none;" id="oculto">enviar</button>
+                <button type="submit" style="display:none;" id="oculto"></button>
             </form>
         </div>
       </div>
+      
       <div class="botones" style="background: rgba(65, 64, 59, 0.445);">
       <div>
         <button type="button" style="background: red;" data-bs-dismiss="modal">Cerrar</button>
@@ -70,24 +71,25 @@
         $("#accionador").click(function(){
             $("#oculto").click();
         });
-    $("#give").submit(function(event){
-        event.preventDefault(); //previene el comportamiento por defecto del formulario
-        var mesa = $("#mesa").val(); //obtiene el valor del select mesa
-        var beer = $("#beer").val(); //obtiene el valor del input de cervezas
-        var user = $("#user").val(); //obtiene el valor del input de catadores
-        var res = $('#resultado');
 
-        $.ajax({
-              data: {mesa:mesa, beer:beer, user:user}, //variables o parametros a enviar, formato => nombre_de_variable:contenido
-              dataType: 'html', //tipo de datos que esperamos de regreso
-              type: 'POST', //mandar variables como post o get
-              url: './controladoreJuzgamiento/beer.php' //url que recibe las variables
-            }).done(function(data){ //metodo que se ejecuta cuando ajax ha completado su ejecucion             
+      $("#give").submit(function(event){
+          event.preventDefault(); //previene el comportamiento por defecto del formulario
+          var mesa = $("#mesa").val(); //obtiene el valor del select mesa
+          var beer = $("#beer").val(); //obtiene el valor del input de cervezas
+          var user = $("#user").val(); //obtiene el valor del input de catadores
+          var res = $('#resultado');
 
-              res.html(data); //establecemos el contenido html de discos con la informacion que regresa ajax             
-              
-            });
-    });
+          $.ajax({
+                data: {mesa:mesa, beer:beer, user:user}, //variables o parametros a enviar, formato => nombre_de_variable:contenido
+                dataType: 'html', //tipo de datos que esperamos de regreso
+                type: 'POST', //mandar variables como post o get
+                url: './controladoreJuzgamiento/beer.php' //url que recibe las variables
+              }).done(function(data){ //metodo que se ejecuta cuando ajax ha completado su ejecucion             
+
+                res.html(data); //establecemos el contenido html de discos con la informacion que regresa ajax             
+                
+              });
+      });
     });
 </script>
 

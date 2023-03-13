@@ -6,35 +6,36 @@ include "config/conexion.php";
 $sql=$conexion->query("SELECT * FROM evento ORDER BY Id_evento DESC LIMIT 0,1");
 $dat=$sql->fetch_object();
 
+// que haya al menos un evento
 if ($dat!=null) {
-    if (($dat->Nombre)!="") {
-        $hoy = date('Y-m-d');
-        if (($dat->Fecha_fin)<=$hoy) {
-            $sql=$conexion->query(" INSERT INTO evento (Nombre, Fecha, Fecha_fin, Lugar) VALUES ('', '', '','') ");
+	
+	//que tome la fecha de hoy
+	$hoy = date('Y-m-d');
+	//que compare si ya es la fecha final para la inscripción
+	if (($dat->Fecha_fin)<=$hoy) {
+		//que actualice el evento y lo deshabilite para la inscripción
+		$sql=$conexion->query(" UPDATE evento SET Activo=1 WHERE Id_evento=($dat->Id_evento)");
 
-            if ($sql == 1) {
-                
-                /* echo "<div style='color: white;
-                padding: 0 0 20px 0;
-                text-align: center;
-                color: #fff;
-                font-size: 20px;'>Evento registrado</div>"; */
-                echo "<script> location.reload(true);
-                
-                </script>";
+		if ($sql == 1) {
+			/* 
+			echo "<div style='color: white;
+			padding: 0 0 20px 0;
+			text-align: center;
+			color: #fff;
+			font-size: 20px;'>Sistema actualizado</div>"; */
 
-            } else {
-                
-                echo "<div style='color: white;
-                padding: 0 0 20px 0;
-                text-align: center;
-                color: #fff;
-                font-size: 20px;'>Ocurrio un error</div>";
+		} else {
+			
+			echo "<div style='color: white;
+			padding: 0 0 20px 0;
+			text-align: center;
+			color: #fff;
+			font-size: 20px;'>Ocurrio un error</div>";
 
-            }
-            
-        }
-    }
+		}
+		
+	}
+    
 }
 
 ?>

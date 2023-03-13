@@ -5,7 +5,7 @@ function MinMaxNumber(that, value){
     
     if (val < min || isNaN (val)) {
         
-        return min;
+        return;
 
     } else if (val > max) {
 

@@ -11,6 +11,9 @@ const atras3 = document.querySelector(".atras3");
 const siguiente4 = document.querySelector(".siguiente4");
 
 const atras4 = document.querySelector(".atras4"); 
+const siguiente5 = document.querySelector(".siguiente5");
+
+const atras5 = document.querySelector(".atras5");
 
     /* botones siguiente */
 
@@ -42,6 +45,13 @@ const atras4 = document.querySelector(".atras4");
     
     });
 
+    siguiente5.addEventListener("click", function(e){
+        e.preventDefault();
+    
+        movPag.style.marginLeft = "-500%";
+    
+    });
+
 
     /* botones atras */
 
@@ -70,6 +80,14 @@ const atras4 = document.querySelector(".atras4");
         e.preventDefault();
     
         movPag.style.marginLeft = "-300%";
+    
+    });
+
+
+    atras5.addEventListener("click", function(e){
+        e.preventDefault();
+    
+        movPag.style.marginLeft = "-400%";
     
     });
 

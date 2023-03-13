@@ -180,8 +180,42 @@ body{
 }
 
 
+/* style que se le da al buscador */
+.buscador{
+    margin-bottom: 30px;
+}
+
+.buscador input[type="text"]{
+    width: 240px;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 15px;
+    outline: none;
+    color: white;
+    border: 1px solid #fff;
+    background: transparent;
+    border-radius: 20px;
+}
+
+::placeholder{
+    color: #fff;
+}
+
 
 /* ----------------------apartado del responsive----------------------- */
+
+/* ----------------------apartado para pantallas no tan pequeñas como tablets para la tabla de contenido----------------------- */
+
+@media screen and (max-width: 1116px) {
+    
+    .table-responsive{
+        overflow-x: scroll;
+        margin: 80px;
+    }
+        
+}
+
+
 
 @media screen and (max-width: 760px) {
     
@@ -198,7 +232,7 @@ body{
     
     .table-responsive{
         overflow-x: scroll;
-		margin: 20px;
+        margin: 20px;
     }
     
     

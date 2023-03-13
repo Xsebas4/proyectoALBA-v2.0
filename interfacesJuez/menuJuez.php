@@ -5,6 +5,14 @@
 
 <body id="body">
 
+<div id="fondo"></div>
+
+
+	<!-- para incluir el modal donde vendra el editar perfil -->
+     <?php 
+        include "../editarPerfil/editarPerfil.php"
+    ?>
+
     <!-- icono del menu desplegable -->
     <header>
 
@@ -33,23 +41,13 @@
 			<?php 
 
             if ($_SESSION["Foto"] != "") {
-				?>
-				<a href="../editarPerfil/editarPerfil.php?Id_usuario=<?= $_SESSION["Id_usuario"] ?>">
-				<?php
-				
-                echo '<img class="fotoPerfil" src="data:image/jpg;base64,'. base64_encode($_SESSION["Foto"]).'" alt="Foto">';
-                ?>
-				</a>
-				<?php
+
+                echo '<label for="btn-modal"><div class="fotoP"><img src="data:image/jpg;base64,'. base64_encode($_SESSION["Foto"]).'" alt="Foto"></div></label>';
 				
             } else {
-				?>
-				<a href="../editarPerfil/editarPerfil.php?Id_usuario=<?= $_SESSION["Id_usuario"] ?>">
-				<?php
-                echo '<i class="bi bi-person-circle"></i>';
-                ?>
-				</a>
-				<?php
+
+                echo '<label for="btn-modal"><div class="iconoPerfil"><i class="bi bi-person-circle"></i></div></label>';
+
             }
             
             ?>
@@ -57,18 +55,18 @@
                 <h4><?php echo$_SESSION["Nombre"]." ".$_SESSION["Apellido"]; ?></h4>
 
                 <!-- icono del lapiz editar -->
-                <a href="../editarPerfil/editarPerfil.php?Id_usuario=<?= $_SESSION["Id_usuario"] ?>">
+                <!-- <a href="../editarPerfil/editarPerfil.php?Id_usuario=<?= $_SESSION["Id_usuario"] ?>">
                     <div class="lapiz">
                         <i class="bi bi-pencil-fill"></i>
                     </div>
-                </a>
+                </a> -->
                 
             </div>
 
         <!-- opciones del menu -->
         <div class="options_menu">
 
-            <a href="inicioJuez.php">
+            <a href="index.php">
                 <div class="option">
                 <i class="bi bi-house" title="Inicio"></i> 
                 <h4>Inicio</h4>
@@ -78,18 +76,11 @@
             <a href="juzgamiento.php">
                 <div class="option">
                 <i class="bi bi-ui-checks" title="Formulario"></i> 
-                <h4>Formulario</h4>
+                <h4>Cata</h4>
                 </div>
             </a>
 
-            <a href="resultados/index.php">
-                <div class="option">
-                <i class="bi bi-search" title="Resultados anteriores"></i> 
-                <h4>Resultados anteriores</h4>
-                </div>
-            </a>
-
-            <a href="statsgen/index.php">
+            <a href="../statsgen/index.php">
                 <div class="option">
                 <i class="bi bi-clipboard2-check" title="Resultados"></i> 
                 <h4>Resultados</h4>
